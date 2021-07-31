@@ -5,20 +5,23 @@
 
 //Theme 1
 $main-bg1: hsl(222, 26%, 31%);
-$secondary-bg1: hsl(223, 31%, 20%); //keypad, toggle
+$keypad-bg1: hsl(223, 31%, 20%); //keypad, toggle
+$toggle-bg1: hsl(223, 31%, 20%);
 $screen-bg1: hsl(224, 36%, 15%);
 
   /* Keys*/
-$key-bg1: hsl(225, 21%, 49%); //Del and Reset
-$key-shadow1: hsl(224, 28%, 35%); //Del and Reset
-$key-red-bg1: hsl(6, 63%, 50%); //Evaluate =
-$key-red-shadow1: hsl(6, 70%, 34%); //Evaluate =
-$key-lt-gray-bg1: hsl(30, 25%, 89%); // Other keys
-$key-gray-orange-shadow1: hsl(28, 16%, 65%); // Other keys
+$delete-key-bg1: hsl(225, 21%, 49%); //Del and Reset
+$delete-key-shadow1: hsl(224, 28%, 35%);
+$reset-key-bg1: hsl(225, 21%, 49%); //Del and Reset
+$reset-key-shadow1: hsl(224, 28%, 35%); //Del and Reset
+$equal-sign-bg1: hsl(6, 63%, 50%); //Evaluate =
+$equal-sign-shadow1: hsl(6, 70%, 34%); //Evaluate =
+$number-key-bg1: hsl(30, 25%, 89%); // Other keys
+$number-key-shadow1: hsl(28, 16%, 65%); // Other keys
 
   /* Text */
-$text-dk-blue1: hsl(221, 14%, 31%);
-$text-white1: hsl(0, 0, 100%); 
+$text-gray-theme1: hsl(221, 14%, 31%);
+$text-white-theme1: hsl(0, 0, 100%); 
 
 
 //Theme 2
