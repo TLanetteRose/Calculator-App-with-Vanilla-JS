@@ -61,3 +61,9 @@ $text-white3: hsl(0, 0, 100%);
 $font-family: 'Spartan', sans-serif;
 $weight-bold: 700;
 $weight-regular: 400;
+
+/* Breakpoints */
+$bp-mobile: 767px;
+$bp-tablet-start: 768px;
+$bp-table-end: 1024px;
+$bp-desktop: 1025px;
