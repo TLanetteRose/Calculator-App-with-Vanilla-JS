@@ -7,20 +7,39 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="dist/css/main.css"/>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main class="calculator">
+    <div class="calculator-container">
+      <header class="header calculator-theme">
+        <div class="header-container">
+          <h4>calc</h4>
+          <div id="toggle-container">
+            <div id="theme-title">
+              <label class="theme-number">1</label>
+              <label class="theme-number">2</label>
+              <label class="theme-number">3</label>
+            </div>
+            <div id="toggle">
+              
+            </div>
+          </div> <!-- .toggle-container -->
+        </div>
+      </header>
+      <section class="calculator-screen"></section>
+      <section class="calculator-keypad"></section>
+    </div><!-- .calculator-container -->
+  </main>
+  <footer> 
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/TLanetteRose">T.Lanette</a>.
+    </div>
+  </footer>
 
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src="js/calculator.js"></script>
+  <script src="js/theme.js"></script>
 </body>
 </html>

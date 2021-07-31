@@ -1,0 +1,69 @@
+/* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap');
+
+/* Variables */
+
+//Theme 1
+$main-bg1: hsl(222, 26%, 31%);
+$secondary-bg1: hsl(223, 31%, 20%); //keypad, toggle
+$screen-bg1: hsl(224, 36%, 15%);
+
+  /* Keys*/
+$key-bg1: hsl(225, 21%, 49%); //Del and Reset
+$key-shadow1: hsl(224, 28%, 35%); //Del and Reset
+$key-red-bg1: hsl(6, 63%, 50%); //Evaluate =
+$key-red-shadow1: hsl(6, 70%, 34%); //Evaluate =
+$key-lt-gray-bg1: hsl(30, 25%, 89%); // Other keys
+$key-gray-orange-shadow1: hsl(28, 16%, 65%); // Other keys
+
+  /* Text */
+$text-dk-blue1: hsl(221, 14%, 31%);
+$text-white1: hsl(0, 0, 100%); 
+
+
+//Theme 2
+$main-bg2: hsl(0, 0%, 90%);
+$secondary-bg2: hsl(0, 5%, 81%); //keypad, toggle
+$screen-bg2: hsl(0, 0%, 93%); //screen
+
+  /* Keys*/
+$key-bg2: hsl(185, 42%, 37%); //Del and Reset
+$key-shadow2: hsl(185, 58%, 25%); //Del and Reset
+$key-orange-bg2: hsl(25, 98%, 40%); //Evaluate =
+$key-orange-shadow2: hsl(25, 99%, 27%); //Evaluate =
+$key-lt-gray-bg2: hsl(45, 7%, 89%); // Other keys
+$key-dk-gray-shadow2: hsl(35, 11%, 61%); // Other keys
+
+  /* Text */
+$text-dk-gray2: hsl(60, 10%, 19%);
+$text-white2: hsl(0, 0, 100%);
+
+
+//Theme 3
+$main-bg3: hsl(268, 75%, 9%);
+$secondary-bg3: hsl(268, 71%, 12%); //keypad, toggle, screen 
+
+/* Keys*/
+$key-bg3: hsl(281, 89%, 26%); //Del and Reset
+$key-shadow3: hsl(285, 91%, 52%); //Del and Reset
+$key-cyan-bg3: hsl(176, 100%, 44%); //Evaluate =
+$key-cyan-shadow3: hsl(177, 92%, 70%); //Evaluate =
+$key-dk-violet-bg3: hsl(268, 47%, 21%); // Other keys
+$key-dk-magenta-shadow3: hsl(290, 70%, 36%); // Other keys
+
+/* Text */
+$text-lt-yellow3: hsl(52, 100%, 62%);
+$text-dk-blue3: hsl(198, 20%, 13%);
+$text-white3: hsl(0, 0, 100%);
+
+
+//Font
+$font-family: 'Spartan', sans-serif;
+$weight-bold: 700;
+$weight-regular: 400;
+
+/* Breakpoints */
+$bp-mobile: 767px;
+$bp-tablet-start: 768px;
+$bp-table-end: 1024px;
+$bp-desktop: 1025px;
