@@ -12,24 +12,39 @@
 </head>
 <body>
   <main class="calculator">
-    <div class="calculator-container">
-      <header class="header calculator-theme">
-        <div class="header-container">
+    <div class="calculator__container">
+      <header class="header">
+        <div class="header__container">
           <h4>calc</h4>
-          <div id="toggle-container">
-            <div id="theme-title">
+          <div id="toggle__container">
+            <p class="toggle-title">theme</p>
+            <div id="theme-numbers">
               <label class="theme-number">1</label>
               <label class="theme-number">2</label>
               <label class="theme-number">3</label>
             </div>
-            <div id="toggle">
-              
+            <div id="toggle__switch" class="toggle__switch">
+              <label for="toggle">
+                <input name="toggle" type="radio" aria-label="theme1-toggler" id="theme1Toggle" class="theme-toggle" checked/>
+              </label>
+              <label for="toggle">
+                <input name="toggle" type="radio" aria-label="theme2-toggler" id="theme2Toggle" class="theme-toggle"/>
+              </label>
+              <label for="toggle">
+                <input name="toggle" type="radio" aria-label="theme3-toggler" id="theme3Toggle" class="theme-toggle"/>
+              </label>
             </div>
           </div> <!-- .toggle-container -->
-        </div>
+        </div><!-- .header__container -->
       </header>
-      <section class="calculator-screen"></section>
-      <section class="calculator-keypad"></section>
+
+      <section class="display-container">
+        <input type="text" id="display" class="calculator__screen" value="0" disabled />
+      </section> <!-- .display-container -->
+      
+      <section class="calculator-keypad">
+
+      </section>
     </div><!-- .calculator-container -->
   </main>
   <footer> 

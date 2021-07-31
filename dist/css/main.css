@@ -45,6 +45,11 @@ h6 {
   font-weight: 400;
 }
 
+p,
+label {
+  font-size: 1.2rem;
+}
+
 /* Attribution */
 .attribution {
   font-size: 11px;
