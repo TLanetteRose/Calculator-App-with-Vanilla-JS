@@ -43,17 +43,21 @@ $text-white-theme2: hsl(0, 0, 100%);
 
 //Theme 3
 $main-bg3: hsl(268, 75%, 9%);
-$secondary-bg3: hsl(268, 71%, 12%); //keypad, toggle, screen 
+$keypad-bg3: hsl(268, 71%, 12%); //keypad, toggle, screen 
+$toggle-bg3: hsl(268, 71%, 12%);
+$screen-bg3: hsl(268, 71%, 12%);
 
 /* Keys*/
-$key-bg3: hsl(281, 89%, 26%); //Del and Reset
-$key-shadow3: hsl(285, 91%, 52%); //Del and Reset
-$key-cyan-bg3: hsl(176, 100%, 44%); //Evaluate =
-$key-cyan-shadow3: hsl(177, 92%, 70%); //Evaluate =
-$key-dk-violet-bg3: hsl(268, 47%, 21%); // Other keys
-$key-dk-magenta-shadow3: hsl(290, 70%, 36%); // Other keys
+$delete-key-bg3: hsl(281, 89%, 26%); //Del and Reset
+$delete-key-shadow3: hsl(285, 91%, 52%); //Del and Reset
+$reset-key-bg3: hsl(281, 89%, 26%);
+$reset-key-shadow3: hsl(285, 91%, 52%);
+$equal-sign-bg3: hsl(176, 100%, 44%); //Evaluate =
+$equal-sign-shadow3: hsl(177, 92%, 70%); //Evaluate =
+$number-key-bg3: hsl(268, 47%, 21%); // Other keys
+$number-key-shadow3: hsl(290, 70%, 36%); // Other keys
 
 /* Text */
-$text-lt-yellow3: hsl(52, 100%, 62%);
-$text-dk-blue3: hsl(198, 20%, 13%);
-$text-white3: hsl(0, 0, 100%);
+$text-lt-yellow-theme3: hsl(52, 100%, 62%);
+$text-dk-blue-theme3: hsl(198, 20%, 13%);
+$text-white-theme3: hsl(0, 0, 100%);

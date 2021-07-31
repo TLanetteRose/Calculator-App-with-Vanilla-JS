@@ -48,23 +48,24 @@
 
 .theme3 {
     /* Backgrounds */
-    --color-page-bg2: #{$main-bg2};
-    --color-keypad-bg2: #{$keypad-bg2};
-    --color-toggle-bg2: #{$toggle-bg2};
-    --color-screen-bg2: #{$screen-bg2};
+    --color-page-bg3: #{$main-bg3};
+    --color-keypad-bg3: #{$keypad-bg3};
+    --color-toggle-bg3: #{$toggle-bg3};
+    --color-screen-bg3: #{$screen-bg3};
 
     /* Keys */
-    --color-delete-key-bg2: #{$delete-key-bg2};
-    --color-delete-shadow2: #{$delete-key-shadow2};
-    --color-reset-key-bg2: #{$reset-key-bg2};
-    --color-reset-shadow2: #{$reset-key-shadow2} --color-equal-sign-bg2: #{$equal-sign-bg2};
-    --color-equal-sign-shadow2: #{$equal-sign-shadow2};
-    --color-number-key-bg2: #{$number-key-bg2};
-    --color-number-key-shadow2: #{$number-key-shadow2};
+    --color-delete-key-bg3: #{$delete-key-bg3};
+    --color-delete-shadow3: #{$delete-key-shadow3};
+    --color-reset-key-bg3: #{$reset-key-bg3};
+    --color-reset-shadow3: #{$reset-key-shadow3} --color-equal-sign-bg3: #{$equal-sign-bg3};
+    --color-equal-sign-shadow3: #{$equal-sign-shadow3};
+    --color-number-key-bg3: #{$number-key-bg3};
+    --color-number-key-shadow3: #{$number-key-shadow3};
 
     /* Text */
-    --color-text-gray2: #{$text-dk-gray-theme2};
-    --color-text-white2: #{$text-white-theme2};
+    --color-text-lt-yellow3: #{$text-lt-yellow-theme3};
+    --color-text-dk-blue3: #{$text-dk-blue-theme3};
+    --color-text-white3: #{$text-white-theme3};
 
 }
 
