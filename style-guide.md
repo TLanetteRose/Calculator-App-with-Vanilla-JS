@@ -91,4 +91,5 @@ The designs were created to the following widths:
 ### Font
 
 - Family: [Spartan](https://fonts.google.com/specimen/Spartan)
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap');
 - Weights: 700
