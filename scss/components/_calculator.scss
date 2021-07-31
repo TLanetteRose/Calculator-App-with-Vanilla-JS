@@ -1,0 +1,77 @@
+
+
+/* Default Theme- Theme 1 */
+
+:root {
+    /* Backgrounds */
+   --color-page-bg1: #{$main-bg1};
+   --color-keypad-bg1: #{$keypad-bg1};
+   --color-toggle-bg1: #{$toggle-bg1};
+   --color-screen-bg1: #{$screen-bg1};
+
+   /* Keys */
+   --color-delete-key-bg1: #{$delete-key-bg1};
+   --color-delete-shadow1: #{$delete-key-shadow1};
+   --color-reset-key-bg1: #{$reset-key-bg1};
+   --color-reset-shadow1: #{$reset-key-shadow1}
+   --color-equal-sign-bg1: #{$equal-sign-bg1};
+   --color-equal-sign-shadow1: #{$equal-sign-shadow1};
+   --color-number-key-bg1: #{$number-key-bg1};
+   --color-number-key-shadow1: #{$number-key-shadow1};
+
+   /* Text */
+   --color-text-gray1: #{$text-gray-theme1};
+   --color-text-white1: #{$text-white-theme1};
+}
+
+.theme2 {
+    /* Backgrounds */
+    --color-page-bg2: #{$main-bg2};
+    --color-keypad-bg2: #{$keypad-bg2};
+    --color-toggle-bg2: #{$toggle-bg2};
+    --color-screen-bg2: #{$screen-bg2};
+
+    /* Keys */
+    --color-delete-key-bg2: #{$delete-key-bg2};
+    --color-delete-shadow2: #{$delete-key-shadow2};
+    --color-reset-key-bg2: #{$reset-key-bg2};
+    --color-reset-shadow2: #{$reset-key-shadow2} --color-equal-sign-bg2: #{$equal-sign-bg2};
+    --color-equal-sign-shadow2: #{$equal-sign-shadow2};
+    --color-number-key-bg2: #{$number-key-bg2};
+    --color-number-key-shadow2: #{$number-key-shadow2};
+
+    /* Text */
+    --color-text-gray2: #{$text-dk-gray-theme2};
+    --color-text-white2: #{$text-white-theme2};
+}
+
+
+.theme3 {
+    /* Backgrounds */
+    --color-page-bg2: #{$main-bg2};
+    --color-keypad-bg2: #{$keypad-bg2};
+    --color-toggle-bg2: #{$toggle-bg2};
+    --color-screen-bg2: #{$screen-bg2};
+
+    /* Keys */
+    --color-delete-key-bg2: #{$delete-key-bg2};
+    --color-delete-shadow2: #{$delete-key-shadow2};
+    --color-reset-key-bg2: #{$reset-key-bg2};
+    --color-reset-shadow2: #{$reset-key-shadow2} --color-equal-sign-bg2: #{$equal-sign-bg2};
+    --color-equal-sign-shadow2: #{$equal-sign-shadow2};
+    --color-number-key-bg2: #{$number-key-bg2};
+    --color-number-key-shadow2: #{$number-key-shadow2};
+
+    /* Text */
+    --color-text-gray2: #{$text-dk-gray-theme2};
+    --color-text-white2: #{$text-white-theme2};
+
+}
+
+
+
+
+body {
+    background-color: var(--color-page-bg1);
+    color: var(--color-text-white1);
+}

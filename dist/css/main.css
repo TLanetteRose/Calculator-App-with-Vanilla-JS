@@ -1,14 +1,35 @@
-/* Base */
-/* Font Family */
+/* Abstracts */
+/*Theme 1*/
+/* Keys*/
+/* Text */
+/* Keys*/
+/* Text */
+/* Keys*/
+/* Text */
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap");
-/* Variables */
-/* Keys*/
-/* Text */
-/* Keys*/
-/* Text */
-/* Keys*/
-/* Text */
+/* Font */
+/* Font Family */
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 3.2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+p,
+label {
+  font-size: 1.2rem;
+}
+
 /* Breakpoints */
+/* Components */
 * {
   margin: 0;
   padding: 0;
@@ -30,25 +51,6 @@ html {
 body {
   width: 100%;
   min-height: 100vh;
-  font-family: "Spartan", sans-serif;
-  font-size: 3.2rem;
-  font-weight: 400;
-  background-color: #3a4764;
-  color: white;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 400;
-}
-
-p,
-label {
-  font-size: 1.2rem;
 }
 
 /* Attribution */
@@ -61,4 +63,66 @@ label {
   color: #3e52a3;
 }
 
-/* Layout *//*# sourceMappingURL=main.css.map */
+/* Default Theme- Theme 1 */
+:root {
+  /* Backgrounds */
+  --color-page-bg1: #3a4764;
+  --color-keypad-bg1: #232c43;
+  --color-toggle-bg1: #232c43;
+  --color-screen-bg1: #182034;
+  /* Keys */
+  --color-delete-key-bg1: #637097;
+  --color-delete-shadow1: #404e72;
+  --color-reset-key-bg1: #637097;
+  --color-reset-shadow1: #404e72
+  --color-equal-sign-bg1: #d03f2f;
+  --color-equal-sign-shadow1: #93261a;
+  --color-number-key-bg1: #eae3dc;
+  --color-number-key-shadow1: #b4a597;
+  /* Text */
+  --color-text-gray1: #444b5a;
+  --color-text-white1: white;
+}
+
+.theme2 {
+  /* Backgrounds */
+  --color-page-bg2: #e6e6e6;
+  --color-keypad-bg2: #d1cccc;
+  --color-toggle-bg2: #d1cccc;
+  --color-screen-bg2: #ededed;
+  /* Keys */
+  --color-delete-key-bg2: #377f86;
+  --color-delete-shadow2: #1b5f65;
+  --color-reset-key-bg2: #377f86;
+  --color-reset-shadow2: #1b5f65 --color-equal-sign-bg2: #ca5502;
+  --color-equal-sign-shadow2: #893901;
+  --color-number-key-bg2: #e5e4e1;
+  --color-number-key-shadow2: #a69d91;
+  /* Text */
+  --color-text-gray2: #35352c;
+  --color-text-white2: white;
+}
+
+.theme3 {
+  /* Backgrounds */
+  --color-page-bg2: #e6e6e6;
+  --color-keypad-bg2: #d1cccc;
+  --color-toggle-bg2: #d1cccc;
+  --color-screen-bg2: #ededed;
+  /* Keys */
+  --color-delete-key-bg2: #377f86;
+  --color-delete-shadow2: #1b5f65;
+  --color-reset-key-bg2: #377f86;
+  --color-reset-shadow2: #1b5f65 --color-equal-sign-bg2: #ca5502;
+  --color-equal-sign-shadow2: #893901;
+  --color-number-key-bg2: #e5e4e1;
+  --color-number-key-shadow2: #a69d91;
+  /* Text */
+  --color-text-gray2: #35352c;
+  --color-text-white2: white;
+}
+
+body {
+  background-color: var(--color-page-bg1);
+  color: var(--color-text-white1);
+}/*# sourceMappingURL=main.css.map */
