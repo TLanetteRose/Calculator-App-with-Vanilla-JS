@@ -66,83 +66,84 @@ body {
 /* Default Theme- Theme 1 */
 :root {
   /* Backgrounds */
-  --color-page-bg1: #3a4764;
-  --color-keypad-bg1: #232c43;
-  --color-toggle-bg1: #232c43;
-  --color-screen-bg1: #182034;
+  --color-page-bg: #3a4764;
+  --color-keypad-bg: #232c43;
+  --color-toggle-bg: #232c43;
+  --color-screen-bg: #182034;
   /* Keys */
-  --color-delete-key-bg1: #637097;
-  --color-delete-shadow1: #404e72;
-  --color-reset-key-bg1: #637097;
-  --color-reset-shadow1: #404e72
-  --color-equal-sign-bg1: #d03f2f;
-  --color-equal-sign-shadow1: #93261a;
-  --color-number-key-bg1: #eae3dc;
-  --color-number-key-shadow1: #b4a597;
+  --color-delete-key-bg: #637097;
+  --color-delete-shadow: #404e72;
+  --color-reset-key-bg: #637097;
+  --color-reset-shadow: #404e72
+  --color-equal-sign-bg: #d03f2f;
+  --color-equal-sign-shadow: #93261a;
+  --color-number-key-bg: #eae3dc;
+  --color-number-key-shadow: #b4a597;
   /* Text */
-  --color-text-gray1: #444b5a;
-  --color-text-white1: white;
+  --primary-text-color: #444b5a;
+  --secondary-text-color: white;
 }
 
 body.theme1 {
   /* Backgrounds */
-  --color-page-bg1: #3a4764;
-  --color-keypad-bg1: #232c43;
-  --color-toggle-bg1: #232c43;
-  --color-screen-bg1: #182034;
+  --color-page-bg: #3a4764;
+  --color-keypad-bg: #232c43;
+  --color-toggle-bg: #232c43;
+  --color-screen-bg: #182034;
   /* Keys */
-  --color-delete-key-bg1: #637097;
-  --color-delete-shadow1: #404e72;
-  --color-reset-key-bg1: #637097;
-  --color-reset-shadow1: #404e72 --color-equal-sign-bg1: #d03f2f;
-  --color-equal-sign-shadow1: #93261a;
-  --color-number-key-bg1: #eae3dc;
-  --color-number-key-shadow1: #b4a597;
+  --color-delete-key-bg: #637097;
+  --color-delete-shadow: #404e72;
+  --color-reset-key-bg: #637097;
+  --color-reset-shadow: #404e72 --color-equal-sign-bg: #d03f2f;
+  --color-equal-sign-shadow: #93261a;
+  --color-number-key-bg: #eae3dc;
+  --color-number-key-shadow: #b4a597;
   /* Text */
-  --color-text-gray1: #444b5a;
-  --color-text-white1: white;
+  --primary-text-color: #444b5a;
+  --secondary-text-color: white;
+  --third-text-color: white;
 }
 
 body.theme2 {
   /* Backgrounds */
-  --color-page-bg2: #e6e6e6;
-  --color-keypad-bg2: #d1cccc;
-  --color-toggle-bg2: #d1cccc;
-  --color-screen-bg2: #ededed;
+  --color-page-bg: #e6e6e6;
+  --color-keypad-bg: #d1cccc;
+  --color-toggle-bg: #d1cccc;
+  --color-screen-bg: #ededed;
   /* Keys */
-  --color-delete-key-bg2: #377f86;
-  --color-delete-shadow2: #1b5f65;
-  --color-reset-key-bg2: #377f86;
-  --color-reset-shadow2: #1b5f65 --color-equal-sign-bg2: #ca5502;
-  --color-equal-sign-shadow2: #893901;
-  --color-number-key-bg2: #e5e4e1;
-  --color-number-key-shadow2: #a69d91;
+  --color-delete-key-bg: #377f86;
+  --color-delete-shadow: #1b5f65;
+  --color-reset-key-bg: #377f86;
+  --color-reset-shadow: #1b5f65 --color-equal-sign-bg: #ca5502;
+  --color-equal-sign-shadow: #893901;
+  --color-number-key-bg: #e5e4e1;
+  --color-number-key-shadow: #a69d91;
   /* Text */
-  --color-text-gray2: #35352c;
-  --color-text-white2: white;
+  --primary-text-color: #35352c;
+  --secondary-text-color: white;
+  --third-text-color: white;
 }
 
 body.theme3 {
   /* Backgrounds */
-  --color-page-bg3: #160628;
-  --color-keypad-bg3: #1d0934;
-  --color-toggle-bg3: #1d0934;
-  --color-screen-bg3: #1d0934;
+  --color-page-bg: #160628;
+  --color-keypad-bg: #1d0934;
+  --color-toggle-bg: #1d0934;
+  --color-screen-bg: #1d0934;
   /* Keys */
-  --color-delete-key-bg3: #58077d;
-  --color-delete-shadow3: #bc15f4;
-  --color-reset-key-bg3: #58077d;
-  --color-reset-shadow3: #bc15f4 --color-equal-sign-bg3: #00e0d1;
-  --color-equal-sign-shadow3: #6cf9f2;
-  --color-number-key-bg3: #341c4f;
-  --color-number-key-shadow3: #871c9c;
+  --color-delete-key-bg: #58077d;
+  --color-delete-shadow: #bc15f4;
+  --color-reset-key-bg: #58077d;
+  --color-reset-shadow: #bc15f4 --color-equal-sign-bg: #00e0d1;
+  --color-equal-sign-shadow: #6cf9f2;
+  --color-number-key-bg: #341c4f;
+  --color-number-key-shadow: #871c9c;
   /* Text */
-  --color-text-lt-yellow3: #ffe53d;
-  --color-text-dk-blue3: #1b2428;
-  --color-text-white3: white;
+  --primary-text-color: #ffe53d;
+  --secondary-text-color: white;
+  --third-text-color: #1b2428;
 }
 
 body {
-  background-color: var(--color-page-bg1);
-  color: var(--color-text-white1);
+  background-color: var(--color-page-bg);
 }/*# sourceMappingURL=main.css.map */

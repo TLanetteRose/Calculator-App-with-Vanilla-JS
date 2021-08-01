@@ -4,89 +4,91 @@
 
 :root {
     /* Backgrounds */
-   --color-page-bg1: #{$main-bg};
-   --color-keypad-bg1: #{$keypad-bg};
-   --color-toggle-bg1: #{$toggle-bg};
-   --color-screen-bg1: #{$screen-bg};
+   --color-page-bg: #{$main-bg1};
+   --color-keypad-bg: #{$keypad-bg1};
+   --color-toggle-bg: #{$toggle-bg1};
+   --color-screen-bg: #{$screen-bg1};
 
    /* Keys */
-   --color-delete-key-bg1: #{$delete-key-bg};
-   --color-delete-shadow1: #{$delete-key-shadow};
-   --color-reset-key-bg1: #{$reset-key-bg};
-   --color-reset-shadow1: #{$reset-key-shadow}
-   --color-equal-sign-bg1: #{$equal-sign-bg};
-   --color-equal-sign-shadow1: #{$equal-sign-shadow};
-   --color-number-key-bg1: #{$number-key-bg};
-   --color-number-key-shadow1: #{$number-key-shadow};
+   --color-delete-key-bg: #{$delete-key-bg1};
+   --color-delete-shadow: #{$delete-key-shadow1};
+   --color-reset-key-bg: #{$reset-key-bg1};
+   --color-reset-shadow: #{$reset-key-shadow1}
+   --color-equal-sign-bg: #{$equal-sign-bg1};
+   --color-equal-sign-shadow: #{$equal-sign-shadow1};
+   --color-number-key-bg: #{$number-key-bg1};
+   --color-number-key-shadow: #{$number-key-shadow1};
 
    /* Text */
-   --color-text-gray1: #{$text-dark};
-   --color-text-white1: #{$text-white};
+   --primary-text-color: #{$text-dark1};
+   --secondary-text-color: #{$text-white1};
 }
 
 body.theme1 {
     /* Backgrounds */
-    --color-page-bg1: #{$main-bg1};
-    --color-keypad-bg1: #{$keypad-bg1};
-    --color-toggle-bg1: #{$toggle-bg1};
-    --color-screen-bg1: #{$screen-bg1};
+    --color-page-bg: #{$main-bg1};
+    --color-keypad-bg: #{$keypad-bg1};
+    --color-toggle-bg: #{$toggle-bg1};
+    --color-screen-bg: #{$screen-bg1};
 
     /* Keys */
-    --color-delete-key-bg1: #{$delete-key-bg1};
-    --color-delete-shadow1: #{$delete-key-shadow1};
-    --color-reset-key-bg1: #{$reset-key-bg1};
-    --color-reset-shadow1: #{$reset-key-shadow1} --color-equal-sign-bg1: #{$equal-sign-bg1};
-    --color-equal-sign-shadow1: #{$equal-sign-shadow1};
-    --color-number-key-bg1: #{$number-key-bg1};
-    --color-number-key-shadow1: #{$number-key-shadow1};
+    --color-delete-key-bg: #{$delete-key-bg1};
+    --color-delete-shadow: #{$delete-key-shadow1};
+    --color-reset-key-bg: #{$reset-key-bg1};
+    --color-reset-shadow: #{$reset-key-shadow1} --color-equal-sign-bg: #{$equal-sign-bg1};
+    --color-equal-sign-shadow: #{$equal-sign-shadow1};
+    --color-number-key-bg: #{$number-key-bg1};
+    --color-number-key-shadow: #{$number-key-shadow1};
 
     /* Text */
-    --color-text-gray1: #{$text-gray-theme1};
-    --color-text-white1: #{$text-white-theme1};
+    --primary-text-color: #{$text-dark1};
+    --secondary-text-color: #{$text-white1};
+    --third-text-color: #{$text-white1};
 }
 
 body.theme2 {
     /* Backgrounds */
-    --color-page-bg2: #{$main-bg2};
-    --color-keypad-bg2: #{$keypad-bg2};
-    --color-toggle-bg2: #{$toggle-bg2};
-    --color-screen-bg2: #{$screen-bg2};
+    --color-page-bg: #{$main-bg2};
+    --color-keypad-bg: #{$keypad-bg2};
+    --color-toggle-bg: #{$toggle-bg2};
+    --color-screen-bg: #{$screen-bg2};
 
     /* Keys */
-    --color-delete-key-bg2: #{$delete-key-bg2};
-    --color-delete-shadow2: #{$delete-key-shadow2};
-    --color-reset-key-bg2: #{$reset-key-bg2};
-    --color-reset-shadow2: #{$reset-key-shadow2} --color-equal-sign-bg2: #{$equal-sign-bg2};
-    --color-equal-sign-shadow2: #{$equal-sign-shadow2};
-    --color-number-key-bg2: #{$number-key-bg2};
-    --color-number-key-shadow2: #{$number-key-shadow2};
+    --color-delete-key-bg: #{$delete-key-bg2};
+    --color-delete-shadow: #{$delete-key-shadow2};
+    --color-reset-key-bg: #{$reset-key-bg2};
+    --color-reset-shadow: #{$reset-key-shadow2} --color-equal-sign-bg: #{$equal-sign-bg2};
+    --color-equal-sign-shadow: #{$equal-sign-shadow2};
+    --color-number-key-bg: #{$number-key-bg2};
+    --color-number-key-shadow: #{$number-key-shadow2};
 
     /* Text */
-    --color-text-gray2: #{$text-dk-gray-theme2};
-    --color-text-white2: #{$text-white-theme2};
+    --primary-text-color: #{$text-dark2};
+    --secondary-text-color: #{$text-white2};
+    --third-text-color: #{$text-white2};
 }
 
 
 body.theme3 {
     /* Backgrounds */
-    --color-page-bg3: #{$main-bg3};
-    --color-keypad-bg3: #{$keypad-bg3};
-    --color-toggle-bg3: #{$toggle-bg3};
-    --color-screen-bg3: #{$screen-bg3};
+    --color-page-bg: #{$main-bg3};
+    --color-keypad-bg: #{$keypad-bg3};
+    --color-toggle-bg: #{$toggle-bg3};
+    --color-screen-bg: #{$screen-bg3};
 
     /* Keys */
-    --color-delete-key-bg3: #{$delete-key-bg3};
-    --color-delete-shadow3: #{$delete-key-shadow3};
-    --color-reset-key-bg3: #{$reset-key-bg3};
-    --color-reset-shadow3: #{$reset-key-shadow3} --color-equal-sign-bg3: #{$equal-sign-bg3};
-    --color-equal-sign-shadow3: #{$equal-sign-shadow3};
-    --color-number-key-bg3: #{$number-key-bg3};
-    --color-number-key-shadow3: #{$number-key-shadow3};
+    --color-delete-key-bg: #{$delete-key-bg3};
+    --color-delete-shadow: #{$delete-key-shadow3};
+    --color-reset-key-bg: #{$reset-key-bg3};
+    --color-reset-shadow: #{$reset-key-shadow3} --color-equal-sign-bg: #{$equal-sign-bg3};
+    --color-equal-sign-shadow: #{$equal-sign-shadow3};
+    --color-number-key-bg: #{$number-key-bg3};
+    --color-number-key-shadow: #{$number-key-shadow3};
 
     /* Text */
-    --color-text-lt-yellow3: #{$text-lt-yellow-theme3};
-    --color-text-dk-blue3: #{$text-dk-blue-theme3};
-    --color-text-white3: #{$text-white-theme3};
+    --primary-text-color: #{$text-light3};
+    --secondary-text-color: #{$text-white3};
+    --third-text-color: #{$text-dark3};
 
 }
 
@@ -94,6 +96,5 @@ body.theme3 {
 
 
 body  {
-    background-color: var(--color-page-bg1);
-    color: var(--color-text-white1);
+    background-color: var(--color-page-bg);
 }
