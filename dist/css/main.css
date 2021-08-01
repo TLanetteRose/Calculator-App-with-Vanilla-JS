@@ -84,7 +84,26 @@ body {
   --color-text-white1: white;
 }
 
-.theme2 {
+body.theme1 {
+  /* Backgrounds */
+  --color-page-bg1: #3a4764;
+  --color-keypad-bg1: #232c43;
+  --color-toggle-bg1: #232c43;
+  --color-screen-bg1: #182034;
+  /* Keys */
+  --color-delete-key-bg1: #637097;
+  --color-delete-shadow1: #404e72;
+  --color-reset-key-bg1: #637097;
+  --color-reset-shadow1: #404e72 --color-equal-sign-bg1: #d03f2f;
+  --color-equal-sign-shadow1: #93261a;
+  --color-number-key-bg1: #eae3dc;
+  --color-number-key-shadow1: #b4a597;
+  /* Text */
+  --color-text-gray1: #444b5a;
+  --color-text-white1: white;
+}
+
+body.theme2 {
   /* Backgrounds */
   --color-page-bg2: #e6e6e6;
   --color-keypad-bg2: #d1cccc;
@@ -103,7 +122,7 @@ body {
   --color-text-white2: white;
 }
 
-.theme3 {
+body.theme3 {
   /* Backgrounds */
   --color-page-bg3: #160628;
   --color-keypad-bg3: #1d0934;

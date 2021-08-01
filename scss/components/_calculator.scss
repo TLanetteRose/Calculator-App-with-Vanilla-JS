@@ -4,27 +4,48 @@
 
 :root {
     /* Backgrounds */
-   --color-page-bg1: #{$main-bg1};
-   --color-keypad-bg1: #{$keypad-bg1};
-   --color-toggle-bg1: #{$toggle-bg1};
-   --color-screen-bg1: #{$screen-bg1};
+   --color-page-bg1: #{$main-bg};
+   --color-keypad-bg1: #{$keypad-bg};
+   --color-toggle-bg1: #{$toggle-bg};
+   --color-screen-bg1: #{$screen-bg};
 
    /* Keys */
-   --color-delete-key-bg1: #{$delete-key-bg1};
-   --color-delete-shadow1: #{$delete-key-shadow1};
-   --color-reset-key-bg1: #{$reset-key-bg1};
-   --color-reset-shadow1: #{$reset-key-shadow1}
-   --color-equal-sign-bg1: #{$equal-sign-bg1};
-   --color-equal-sign-shadow1: #{$equal-sign-shadow1};
-   --color-number-key-bg1: #{$number-key-bg1};
-   --color-number-key-shadow1: #{$number-key-shadow1};
+   --color-delete-key-bg1: #{$delete-key-bg};
+   --color-delete-shadow1: #{$delete-key-shadow};
+   --color-reset-key-bg1: #{$reset-key-bg};
+   --color-reset-shadow1: #{$reset-key-shadow}
+   --color-equal-sign-bg1: #{$equal-sign-bg};
+   --color-equal-sign-shadow1: #{$equal-sign-shadow};
+   --color-number-key-bg1: #{$number-key-bg};
+   --color-number-key-shadow1: #{$number-key-shadow};
 
    /* Text */
-   --color-text-gray1: #{$text-gray-theme1};
-   --color-text-white1: #{$text-white-theme1};
+   --color-text-gray1: #{$text-dark};
+   --color-text-white1: #{$text-white};
 }
 
-.theme2 {
+body.theme1 {
+    /* Backgrounds */
+    --color-page-bg1: #{$main-bg1};
+    --color-keypad-bg1: #{$keypad-bg1};
+    --color-toggle-bg1: #{$toggle-bg1};
+    --color-screen-bg1: #{$screen-bg1};
+
+    /* Keys */
+    --color-delete-key-bg1: #{$delete-key-bg1};
+    --color-delete-shadow1: #{$delete-key-shadow1};
+    --color-reset-key-bg1: #{$reset-key-bg1};
+    --color-reset-shadow1: #{$reset-key-shadow1} --color-equal-sign-bg1: #{$equal-sign-bg1};
+    --color-equal-sign-shadow1: #{$equal-sign-shadow1};
+    --color-number-key-bg1: #{$number-key-bg1};
+    --color-number-key-shadow1: #{$number-key-shadow1};
+
+    /* Text */
+    --color-text-gray1: #{$text-gray-theme1};
+    --color-text-white1: #{$text-white-theme1};
+}
+
+body.theme2 {
     /* Backgrounds */
     --color-page-bg2: #{$main-bg2};
     --color-keypad-bg2: #{$keypad-bg2};
@@ -46,7 +67,7 @@
 }
 
 
-.theme3 {
+body.theme3 {
     /* Backgrounds */
     --color-page-bg3: #{$main-bg3};
     --color-keypad-bg3: #{$keypad-bg3};
@@ -72,7 +93,7 @@
 
 
 
-body {
+body  {
     background-color: var(--color-page-bg1);
     color: var(--color-text-white1);
 }

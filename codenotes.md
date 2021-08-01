@@ -7,4 +7,4 @@ https://designdrastic.com/tutorial/create-a-darklight-or-custom-color-theme-usin
 
 07/31/2021: Learned about using data-attributes in html to select using js. 
 https://www.section.io/engineering-education/building-a-calculator-a-javascript-project-for-beginners/
-Learning about SASS forward and use. Also learned that if I am using the VSCode SASS compiler I still need to use import. 
+Learning about SASS forward and use. Also learned that if I am using the VSCode SASS compiler I still need to use import. Learned that putting $ at the end of certain variables in Js allows you to use them. 
