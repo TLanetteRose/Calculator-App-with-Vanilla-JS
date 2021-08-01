@@ -44,7 +44,7 @@ body.theme1 {
     --header-text-color: #{$text-white1};
     --screen-text-color: #{$text-white1};
     --number-key-text-color: #{$text-dark1};
-    --delete-key-text-color: #{$text-white1};
+    --delete-reset-key-text-color: #{$text-white1};
     --primary-text-color: #{$text-dark1};
     --secondary-text-color: #{$text-white1};
     --third-text-color: #{$text-white1};
@@ -70,7 +70,7 @@ body.theme2 {
     --header-text-color: #{$text-dark2};
     --screen-text-color: #{$text-dark2};
     --number-key-text-color: #{$text-dark2};
-    --delete-key-text-color: #{$text-white2};
+    --delete-reset-key-text-color: #{$text-white2};
 
     --primary-text-color: #{$text-dark2};
     --secondary-text-color: #{$text-white2};
@@ -98,7 +98,8 @@ body.theme3 {
     --header-text-color: #{$text-light3};
     --screen-text-color: #{$text-light3};
     --number-key-text-color: #{$text-light3};
-    --delete-key-text-color: #{$text-white3};
+    --delete-reset-key-text-color: #{$text-white3};
+
     --primary-text-color: #{$text-light3};
     --secondary-text-color: #{$text-white3};
     --third-text-color: #{$text-dark3};
@@ -195,13 +196,19 @@ body  {
         text-transform: uppercase;
     }
 
+    .function-key {
+        font-size: 2rem;
+        font-weight: $weight-regular;
+    }
+
     .delete {
         background-color: var(--color-delete-key-bg);
-        color: var(--delete-key-text-color);
+        color: var(--delete-reset-key-text-color);
     }
 
     .reset {
         background-color: var(--color-reset-key-bg);
+        color: var(--delete-reset-key-text-color);
         grid-column-start: 1;
         grid-column-end: 3;
     }
@@ -214,8 +221,5 @@ body  {
     }
 
     
-    .function-key,
-    .operator {
-        text-transform: uppercase;
-    }
+    
 }
