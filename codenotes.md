@@ -11,4 +11,4 @@ Learning about SASS forward and use. Also learned that if I am using the VSCode 
 
 08/01/2021: My theme switcher worked and I was able to use SASS variables for dark mode and themes. 
 https://dev.to/zetareticoli/dark-mode-with-sass-and-css-variables-4f9b
-Now I am working on the calculator function with js
+Now I am working on the calculator function with js. Used a switch statement for theme js and for key addEventListener. 
