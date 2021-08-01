@@ -6,6 +6,7 @@ const calculator = {
     operator: null,
 };
 
+// Input digits
 function inputDigit(digit) {
     const {displayValue, waitingForSecondOperand} =
     calculator;
@@ -18,6 +19,7 @@ function inputDigit(digit) {
     console.log(calculator);
 }
 
+// Decimal function
 function inputDecimal(dot) {
     if (calculator.waitingForSecondOperand === true) {
         calculator.displayValue = '0.'
@@ -29,6 +31,7 @@ function inputDecimal(dot) {
     }
 }
 
+// Handle Operator
 function handleOperator(nextOperator){
     const{firstOperand, displayValue, operator} = calculator
     const inputValue = parseFloat(displayValue);
@@ -63,3 +66,50 @@ function calculate(firstOperand, secondOperand, operator) {
     }
     return secondOperand;
 }
+
+// Reset calculator
+function resetCalculator () {
+    calculator.displayValue = '0';
+    calculator.firstOperand = null;
+    calculator.waitingForSecondOperand = false;
+    calculator.operator = null;
+}
+
+// Update screen display
+function updateDisplay() {
+    const display = document.getElementById('screen');
+    display.value = calculator.displayValue;
+}
+updateDisplay();
+
+//Keypad
+const keys = document.getElementById('calc-keys');
+keys.addEventListener('click', event => {
+    const { target } = event;
+    const { value } = target;
+
+    if(!target.matches('button')) {
+        return;
+    }
+    switch (value) {
+        case '+':
+        case '-':
+        case '*':
+        case '/':
+        case '=':
+            handleOperator(value);
+            break;
+        case '.':
+            inputDecimal(value);
+            break;
+        case 'reset':
+            resetCalculator();
+            break;
+        default:
+            if (Number.isInteger(parseFloat(value))) {
+                inputDigit(value);
+            }
+    }
+
+    updateDisplay();
+})
