@@ -10,26 +10,58 @@
   <link rel="stylesheet" href="dist/css/main.css"/>
 
 </head>
-<body>
+<body class="theme1">
   <main class="calculator">
-    <div class="calculator-container">
-      <header class="header calculator-theme">
-        <div class="header-container">
+    <div class="calculator__container">
+      <header class="header">
+        <div class="header__container">
           <h4>calc</h4>
-          <div id="toggle-container">
-            <div id="theme-title">
+          <div id="toggle__container">
+            <p class="toggle-title">theme</p>
+            <div id="theme-numbers">
               <label class="theme-number">1</label>
               <label class="theme-number">2</label>
               <label class="theme-number">3</label>
             </div>
-            <div id="toggle">
-              
+            <div id="toggle__switch" class="toggle__switch">
+              <label for="theme1">
+                <input name="theme" type="radio" value="1" aria-label="theme1-toggler" id="theme1" class="theme-toggle" checked/>
+              </label>
+              <label for="theme2">
+                <input name="theme" type="radio" value="2" aria-label="theme2" id="theme2Toggle" class="theme-toggle"/>
+              </label>
+              <label for="theme3">
+                <input name="theme" type="radio" value="3" aria-label="theme3-toggler" id="theme3" class="theme-toggle"/>
+              </label>
             </div>
           </div> <!-- .toggle-container -->
-        </div>
+        </div><!-- .header__container -->
       </header>
-      <section class="calculator-screen"></section>
-      <section class="calculator-keypad"></section>
+
+      <section class="display-container">
+        <input type="text" id="display" class="calculator__screen" value="0" disabled />
+      </section> <!-- .display-container -->
+
+      <section id="keys" class="calculator-keypad">
+        <button type="button" value="7" class="number-key">7</button>
+        <button type="button" value="8" class="number-key">8</button>
+        <button type="button" value="9" class="number-key">9</button>
+        <button type="button" value="delete" class="function-key delete">DEL</button>
+        <button type="button" value="4" class="number-key">4</button>
+        <button type="button" value="5" class="number-key">5</button>
+        <button type="button" value="6" class="number-key">6</button>
+        <button type="button" value="+" class="number-key operator">+</button>
+        <button type="button" value="1" class="number-key">1</button>
+        <button type="button" value="2" class="number-key">2</button>
+        <button type="button" value="3" class="number-key">3</button>
+        <button type="button" value="-" class="number-key operator">-</button>
+        <button type="button" value="." class="function-key decimal">.</button>
+        <button type="button" value="0" class="number-key">0</button>
+        <button type="button" value="/" class="number-key operator">/</button>
+        <button type="button" value="*" class="number-key operator">*</button>
+        <button type="button" value="reset" class="function-key reset span-2">RESET</button>
+        <button type="button" value="=" class="function-key operator span-2">=</button>
+      </section>
     </div><!-- .calculator-container -->
   </main>
   <footer> 

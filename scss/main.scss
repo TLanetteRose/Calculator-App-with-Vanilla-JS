@@ -1,6 +1,9 @@
-/* Base */
-@import "base/variables";
-@import "base/base";
+/* Abstracts */
+@import './abstracts/colors';
+@import './abstracts/fonts';
+@import './abstracts/typography';
+@import './abstracts/utilities';
 
-/* Layout */
-@import "calculator";
+/* Components */ 
+@import './components/layout';
+@import './components/calculator';
