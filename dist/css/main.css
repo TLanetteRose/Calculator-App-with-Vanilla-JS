@@ -80,8 +80,8 @@ body {
   --color-number-key-bg: #eae3dc;
   --color-number-key-shadow: #b4a597;
   /* Text */
-  --color-text-dark: #444b5a;
-  --color-text-white: white;
+  --primary-text-color: #444b5a;
+  --secondary-text-color: white;
 }
 
 body.theme1 {
@@ -99,8 +99,9 @@ body.theme1 {
   --color-number-key-bg: #eae3dc;
   --color-number-key-shadow: #b4a597;
   /* Text */
-  --color-text-dark: #444b5a;
-  --color-text-white: white;
+  --primary-text-color: #444b5a;
+  --secondary-text-color: white;
+  --third-text-color: white;
 }
 
 body.theme2 {
@@ -118,8 +119,9 @@ body.theme2 {
   --color-number-key-bg: #e5e4e1;
   --color-number-key-shadow: #a69d91;
   /* Text */
-  --color-text-dark: #35352c;
-  --color-text-white: white;
+  --primary-text-color: #35352c;
+  --secondary-text-color: white;
+  --third-text-color: white;
 }
 
 body.theme3 {
@@ -137,12 +139,11 @@ body.theme3 {
   --color-number-key-bg: #341c4f;
   --color-number-key-shadow: #871c9c;
   /* Text */
-  --color-text-light: #ffe53d;
-  --color-text-dark: #1b2428;
-  --color-text-white: white;
+  --primary-text-color: #ffe53d;
+  --secondary-text-color: white;
+  --third-text-color: #1b2428;
 }
 
 body {
   background-color: var(--color-page-bg);
-  color: var(--color-text-white);
 }/*# sourceMappingURL=main.css.map */

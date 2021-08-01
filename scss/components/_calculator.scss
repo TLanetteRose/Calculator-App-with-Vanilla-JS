@@ -20,8 +20,8 @@
    --color-number-key-shadow: #{$number-key-shadow1};
 
    /* Text */
-   --color-text-dark: #{$text-dark1};
-   --color-text-white: #{$text-white1};
+   --primary-text-color: #{$text-dark1};
+   --secondary-text-color: #{$text-white1};
 }
 
 body.theme1 {
@@ -41,8 +41,9 @@ body.theme1 {
     --color-number-key-shadow: #{$number-key-shadow1};
 
     /* Text */
-    --color-text-dark: #{$text-dark1};
-    --color-text-white: #{$text-white1};
+    --primary-text-color: #{$text-dark1};
+    --secondary-text-color: #{$text-white1};
+    --third-text-color: #{$text-white1};
 }
 
 body.theme2 {
@@ -62,8 +63,9 @@ body.theme2 {
     --color-number-key-shadow: #{$number-key-shadow2};
 
     /* Text */
-    --color-text-dark: #{$text-dark2};
-    --color-text-white: #{$text-white2};
+    --primary-text-color: #{$text-dark2};
+    --secondary-text-color: #{$text-white2};
+    --third-text-color: #{$text-white2};
 }
 
 
@@ -84,9 +86,9 @@ body.theme3 {
     --color-number-key-shadow: #{$number-key-shadow3};
 
     /* Text */
-    --color-text-light: #{$text-light3};
-    --color-text-dark: #{$text-dark3};
-    --color-text-white: #{$text-white3};
+    --primary-text-color: #{$text-light3};
+    --secondary-text-color: #{$text-white3};
+    --third-text-color: #{$text-dark3};
 
 }
 
@@ -95,5 +97,4 @@ body.theme3 {
 
 body  {
     background-color: var(--color-page-bg);
-    color: var(--color-text-white);
 }
