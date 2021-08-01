@@ -99,6 +99,10 @@ body.theme1 {
   --color-number-key-bg: #eae3dc;
   --color-number-key-shadow: #b4a597;
   /* Text */
+  --header-text-color: white;
+  --screen-text-color: white;
+  --number-key-text-color: #444b5a;
+  --delete-key-text-color: white;
   --primary-text-color: #444b5a;
   --secondary-text-color: white;
   --third-text-color: white;
@@ -120,6 +124,10 @@ body.theme2 {
   --color-number-key-bg: #e5e4e1;
   --color-number-key-shadow: #a69d91;
   /* Text */
+  --header-text-color: #35352c;
+  --screen-text-color: #35352c;
+  --number-key-text-color: #35352c;
+  --delete-key-text-color: white;
   --primary-text-color: #35352c;
   --secondary-text-color: white;
   --third-text-color: white;
@@ -141,6 +149,10 @@ body.theme3 {
   --color-number-key-bg: #341c4f;
   --color-number-key-shadow: #871c9c;
   /* Text */
+  --header-text-color: #ffe53d;
+  --screen-text-color: #ffe53d;
+  --number-key-text-color: #ffe53d;
+  --delete-key-text-color: white;
   --primary-text-color: #ffe53d;
   --secondary-text-color: white;
   --third-text-color: #1b2428;
@@ -164,6 +176,7 @@ body {
   background-color: var(--color-page-bg);
   max-width: 57rem;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -182,6 +195,9 @@ body {
     width: 54rem;
   }
 }
+.calculator__header .calculator-title {
+  color: var(--header-text-color);
+}
 
 /* Display */
 .display__container {
@@ -199,6 +215,7 @@ body {
 }
 .display__container .calculator-screen {
   background-color: var(--color-screen-bg);
+  color: var(--screen-text-color);
 }
 @media (max-width: 576px) {
   .display__container .calculator-screen {
@@ -231,6 +248,17 @@ body {
     height: 47.6rem;
   }
 }
+.calculator-keypad .number-key {
+  background-color: var(--color-number-key-bg);
+  color: var(--number-key-text-color);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.calculator-keypad .delete {
+  background-color: var(--color-delete-key-bg);
+  color: var(--delete-key-text-color);
+}
 .calculator-keypad .reset {
   background-color: var(--color-reset-key-bg);
   grid-column-start: 1;
@@ -241,4 +269,8 @@ body {
   color: var(--third-text-color);
   grid-column-start: 3;
   grid-column-end: 5;
+}
+.calculator-keypad .function-key,
+.calculator-keypad .operator {
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */

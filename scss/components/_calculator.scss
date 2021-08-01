@@ -41,6 +41,10 @@ body.theme1 {
     --color-number-key-shadow: #{$number-key-shadow1};
 
     /* Text */
+    --header-text-color: #{$text-white1};
+    --screen-text-color: #{$text-white1};
+    --number-key-text-color: #{$text-dark1};
+    --delete-key-text-color: #{$text-white1};
     --primary-text-color: #{$text-dark1};
     --secondary-text-color: #{$text-white1};
     --third-text-color: #{$text-white1};
@@ -63,6 +67,11 @@ body.theme2 {
     --color-number-key-shadow: #{$number-key-shadow2};
 
     /* Text */
+    --header-text-color: #{$text-dark2};
+    --screen-text-color: #{$text-dark2};
+    --number-key-text-color: #{$text-dark2};
+    --delete-key-text-color: #{$text-white2};
+
     --primary-text-color: #{$text-dark2};
     --secondary-text-color: #{$text-white2};
     --third-text-color: #{$text-white2};
@@ -86,6 +95,10 @@ body.theme3 {
     --color-number-key-shadow: #{$number-key-shadow3};
 
     /* Text */
+    --header-text-color: #{$text-light3};
+    --screen-text-color: #{$text-light3};
+    --number-key-text-color: #{$text-light3};
+    --delete-key-text-color: #{$text-white3};
     --primary-text-color: #{$text-light3};
     --secondary-text-color: #{$text-white3};
     --third-text-color: #{$text-dark3};
@@ -110,6 +123,7 @@ body  {
     background-color: var(--color-page-bg);
     max-width: 57rem;
     width: 100%; 
+    height: 100%;
     margin: 0 auto;
     @include flex (column, space-between);
 }
@@ -123,6 +137,10 @@ body  {
 
     @media (min-width: $bp-tablet-desktop) {
         width: 54rem;
+    }
+
+    .calculator-title {
+        color: var(--header-text-color);
     }
 
     
@@ -140,6 +158,7 @@ body  {
 
     .calculator-screen {
         background-color: var(--color-screen-bg);
+        color: var(--screen-text-color);
         @media (max-width: $bp-mobile-tablet) {
             width: 32.7rem;
         }
@@ -168,6 +187,18 @@ body  {
         height: 47.6rem;
     }
 
+    .number-key {
+        background-color: var(--color-number-key-bg);
+        color: var(--number-key-text-color);
+        font-size: 2.5rem;
+        font-weight: $weight-bold;
+        text-transform: uppercase;
+    }
+
+    .delete {
+        background-color: var(--color-delete-key-bg);
+        color: var(--delete-key-text-color);
+    }
 
     .reset {
         background-color: var(--color-reset-key-bg);
@@ -180,5 +211,11 @@ body  {
         color: var(--third-text-color);
         grid-column-start: 3;
         grid-column-end: 5;
+    }
+
+    
+    .function-key,
+    .operator {
+        text-transform: uppercase;
     }
 }
