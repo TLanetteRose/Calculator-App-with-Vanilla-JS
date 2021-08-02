@@ -31,15 +31,14 @@ label {
 /* Breakpoints */
 /* Components */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: 1px solid black;
+  outline: 1px solid white;
 }
 
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: inherit;
 }
 
@@ -94,11 +93,16 @@ body.theme1 {
   --color-delete-key-bg: #637097;
   --color-delete-shadow: #404e72;
   --color-reset-key-bg: #637097;
-  --color-reset-shadow: #404e72 --color-equal-sign-bg: #d03f2f;
+  --color-reset-shadow: #404e72;
+  --color-equal-sign-bg: #d03f2f;
   --color-equal-sign-shadow: #93261a;
   --color-number-key-bg: #eae3dc;
   --color-number-key-shadow: #b4a597;
   /* Text */
+  --header-text-color: white;
+  --screen-text-color: white;
+  --number-key-text-color: #444b5a;
+  --delete-reset-key-text-color: white;
   --primary-text-color: #444b5a;
   --secondary-text-color: white;
   --third-text-color: white;
@@ -114,11 +118,16 @@ body.theme2 {
   --color-delete-key-bg: #377f86;
   --color-delete-shadow: #1b5f65;
   --color-reset-key-bg: #377f86;
-  --color-reset-shadow: #1b5f65 --color-equal-sign-bg: #ca5502;
+  --color-reset-shadow: #1b5f65;
+  --color-equal-sign-bg: #ca5502;
   --color-equal-sign-shadow: #893901;
   --color-number-key-bg: #e5e4e1;
   --color-number-key-shadow: #a69d91;
   /* Text */
+  --header-text-color: #35352c;
+  --screen-text-color: #35352c;
+  --number-key-text-color: #35352c;
+  --delete-reset-key-text-color: white;
   --primary-text-color: #35352c;
   --secondary-text-color: white;
   --third-text-color: white;
@@ -134,11 +143,16 @@ body.theme3 {
   --color-delete-key-bg: #58077d;
   --color-delete-shadow: #bc15f4;
   --color-reset-key-bg: #58077d;
-  --color-reset-shadow: #bc15f4 --color-equal-sign-bg: #00e0d1;
+  --color-reset-shadow: #bc15f4;
+  --color-equal-sign-bg: #00e0d1;
   --color-equal-sign-shadow: #6cf9f2;
   --color-number-key-bg: #341c4f;
   --color-number-key-shadow: #871c9c;
   /* Text */
+  --header-text-color: #ffe53d;
+  --screen-text-color: #ffe53d;
+  --number-key-text-color: #ffe53d;
+  --delete-reset-key-text-color: white;
   --primary-text-color: #ffe53d;
   --secondary-text-color: white;
   --third-text-color: #1b2428;
@@ -146,4 +160,137 @@ body.theme3 {
 
 body {
   background-color: var(--color-page-bg);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-page-bg);
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+.calculator__container {
+  background-color: var(--color-page-bg);
+  max-width: 57rem;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Header */
+.calculator__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+}
+@media (max-width: 576px) {
+  .calculator__header {
+    width: 32.7rem;
+  }
+}
+@media (min-width: 577px) {
+  .calculator__header {
+    width: 54rem;
+  }
+}
+.calculator__header .calculator-title {
+  width: 50%;
+  color: var(--header-text-color);
+}
+.calculator__header #toggle__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 15rem;
+  height: 4.5rem;
+}
+
+/* Display */
+input.calculator-screen {
+  background-color: var(--color-screen-bg);
+  color: var(--screen-text-color);
+  border: none;
+  height: 8.5rem;
+  margin: 2.4rem 0;
+  padding: 1.6rem 1.4rem 1.2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: right;
+}
+@media (max-width: 576px) {
+  input.calculator-screen {
+    width: 32.7rem;
+    align-self: center;
+  }
+}
+@media (min-width: 577px) {
+  input.calculator-screen {
+    width: 54rem;
+    height: 12.5rem;
+  }
+}
+
+/* Keypad */
+.calculator-keypad {
+  background-color: var(--color-screen-bg);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 1rem;
+  grid-column-gap: 0.85rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+@media (max-width: 576px) {
+  .calculator-keypad {
+    width: 32.7rem;
+    height: 42rem;
+  }
+}
+@media (min-width: 577px) {
+  .calculator-keypad {
+    width: 54rem;
+    height: 47.6rem;
+  }
+}
+.calculator-keypad .number-key {
+  background-color: var(--color-number-key-bg);
+  color: var(--number-key-text-color);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.calculator-keypad .function-key {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.calculator-keypad .delete {
+  background-color: var(--color-delete-key-bg);
+  color: var(--delete-reset-key-text-color);
+}
+.calculator-keypad .reset {
+  background-color: var(--color-reset-key-bg);
+  color: var(--delete-reset-key-text-color);
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.calculator-keypad .equal-sign {
+  background-color: var(--color-equal-sign-bg);
+  color: var(--third-text-color);
+  grid-column-start: 3;
+  grid-column-end: 5;
 }/*# sourceMappingURL=main.css.map */

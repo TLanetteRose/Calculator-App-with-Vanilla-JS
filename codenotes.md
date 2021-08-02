@@ -10,5 +10,8 @@ https://www.section.io/engineering-education/building-a-calculator-a-javascript-
 Learning about SASS forward and use. Also learned that if I am using the VSCode SASS compiler I still need to use import. Learned that putting $ at the end of certain variables in Js allows you to use them. 
 
 08/01/2021: My theme switcher worked and I was able to use SASS variables for dark mode and themes. 
-https://dev.to/zetareticoli/dark-mode-with-sass-and-css-variables-4f9b
-Now I am working on the calculator function with js
+[Dark Mode with Sass and CSS Variables](https://dev.to/zetareticoli/dark-mode-with-sass-and-css-variables-4f9b)
+Now I am working on the calculator function with js. Used a switch statement for theme js and for key addEventListener. 
+Working on the keypad. Referring to an earlier resource for setting up the keypad grid. No matter how many times that I use grid, I still have to refer to examples. 
+Resources
+[CSS Grid Calculator](https://freshman.tech/css-grid-calculator/)

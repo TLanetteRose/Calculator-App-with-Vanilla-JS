@@ -11,42 +11,42 @@
 
 </head>
 <body class="theme1">
-  <main class="calculator">
+  <main class="main">
     <div class="calculator__container">
       <header class="header">
-        <div class="header__container">
-          <h4>calc</h4>
+        <div class="calculator__header">
+          <h4 class="calculator-title">calc</h4>
           <div id="toggle__container">
             <p class="toggle-title">theme</p>
-            <div id="theme-numbers">
-              <label class="theme-number">1</label>
-              <label class="theme-number">2</label>
-              <label class="theme-number">3</label>
-            </div>
-            <div id="toggle__switch" class="toggle__switch">
-              <label for="theme1">
-                <input name="theme" type="radio" value="1" aria-label="theme1-toggler" id="theme1" class="theme-toggle" checked/>
-              </label>
-              <label for="theme2">
-                <input name="theme" type="radio" value="2" aria-label="theme2" id="theme2" class="theme-toggle"/>
-              </label>
-              <label for="theme3">
-                <input name="theme" type="radio" value="3" aria-label="theme3-toggler" id="theme3" class="theme-toggle"/>
-              </label>
+            <div class="toggle-box">
+              <div id="theme-numbers" class="numbers">
+                <label class="theme-number">1</label>
+                <label class="theme-number">2</label>
+                <label class="theme-number">3</label>
+              </div>
+              <div id="toggle__switch" class="toggle-switch">
+                <label for="theme1">
+                  <input name="theme" type="radio" value="1" aria-label="theme1-toggler" id="theme1" class="theme-toggle" checked/>
+                </label>
+                <label for="theme2">
+                  <input name="theme" type="radio" value="2" aria-label="theme2" id="theme2" class="theme-toggle"/>
+                </label>
+                <label for="theme3">
+                  <input name="theme" type="radio" value="3" aria-label="theme3-toggler" id="theme3" class="theme-toggle"/>
+                </label>
+              </div>
             </div>
           </div> <!-- .toggle-container -->
         </div><!-- .header__container -->
       </header>
 
-      <section class="display-container">
-        <input type="text" id="screen" class="calculator__screen" value="" disabled />
-      </section> <!-- .display-container -->
+      <input type="text" id="screen" class="calculator-screen" value="" disabled />
 
       <section id="calc-keys" class="calculator-keypad">
         <button type="button" value="7" class="number-key">7</button>
         <button type="button" value="8" class="number-key">8</button>
         <button type="button" value="9" class="number-key">9</button>
-        <button type="button" value="delete" class="function-key delete">DEL</button>
+        <button type="button" value="delete" class="function-key number-key delete">del</button>
         <button type="button" value="4" class="number-key">4</button>
         <button type="button" value="5" class="number-key">5</button>
         <button type="button" value="6" class="number-key">6</button>
@@ -55,12 +55,12 @@
         <button type="button" value="2" class="number-key">2</button>
         <button type="button" value="3" class="number-key">3</button>
         <button type="button" value="-" class="number-key operator">-</button>
-        <button type="button" value="." class="function-key decimal">.</button>
+        <button type="button" value="&sdot;" class="function-key number-key decimal">&sdot;</button>
         <button type="button" value="0" class="number-key">0</button>
         <button type="button" value="/" class="number-key operator">/</button>
         <button type="button" value="*" class="number-key operator">*</button>
-        <button type="button" value="reset" class="function-key reset span-2">RESET</button>
-        <button type="button" value="=" class="function-key operator span-2">=</button>
+        <button type="button" value="reset" class="function-key number-key reset">reset</button>
+        <button type="button" value="=" class="function-key number-key equal-sign">=</button>
       </section>
     </div><!-- .calculator-container -->
   </main>
