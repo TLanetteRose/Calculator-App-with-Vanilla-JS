@@ -15,3 +15,5 @@ Now I am working on the calculator function with js. Used a switch statement for
 Working on the keypad. Referring to an earlier resource for setting up the keypad grid. No matter how many times that I use grid, I still have to refer to examples. 
 Resources
 [CSS Grid Calculator](https://freshman.tech/css-grid-calculator/)
+
+08/02/2021: Today I am focusing on styling the calculator header and keypad. Still learning how to work with z-index, position, and opacity. 
