@@ -53,6 +53,11 @@ body {
   min-height: 100vh;
 }
 
+footer {
+  height: 5rem;
+  margin-top: 2rem;
+}
+
 /* Attribution */
 .attribution {
   font-size: 11px;
