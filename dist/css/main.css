@@ -53,21 +53,6 @@ body {
   min-height: 100vh;
 }
 
-footer {
-  height: 5rem;
-  margin-top: 2rem;
-}
-
-/* Attribution */
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: #3e52a3;
-}
-
 /* Default Theme- Theme 1 */
 :root {
   /* Backgrounds */
@@ -84,6 +69,8 @@ footer {
   --color-equal-sign-shadow: #93261a;
   --color-number-key-bg: #eae3dc;
   --color-number-key-shadow: #b4a597;
+  --color-toggle-switch-bg: #232c43;
+  --color-toggle-btn-bg: #d03f2f;
   /* Text */
   --primary-text-color: #444b5a;
   --secondary-text-color: white;
@@ -104,11 +91,15 @@ body.theme1 {
   --color-equal-sign-shadow: #93261a;
   --color-number-key-bg: #eae3dc;
   --color-number-key-shadow: #b4a597;
+  --color-toggle-switch-bg: #232c43;
+  --color-toggle-btn-bg: #d03f2f;
   /* Text */
   --header-text-color: white;
   --screen-text-color: white;
   --number-key-text-color: #444b5a;
   --delete-reset-key-text-color: white;
+  --footer-text-color: white;
+  --footer-link-color: white;
   --primary-text-color: #444b5a;
   --secondary-text-color: white;
   --third-text-color: white;
@@ -129,11 +120,15 @@ body.theme2 {
   --color-equal-sign-shadow: #893901;
   --color-number-key-bg: #e5e4e1;
   --color-number-key-shadow: #a69d91;
+  --color-toggle-switch-bg: #d1cccc;
+  --color-toggle-btn-bg: #ca5502;
   /* Text */
   --header-text-color: #35352c;
   --screen-text-color: #35352c;
   --number-key-text-color: #35352c;
   --delete-reset-key-text-color: white;
+  --footer-text-color: #35352c;
+  --footer-link-color: #35352c;
   --primary-text-color: #35352c;
   --secondary-text-color: white;
   --third-text-color: white;
@@ -154,11 +149,15 @@ body.theme3 {
   --color-equal-sign-shadow: #6cf9f2;
   --color-number-key-bg: #341c4f;
   --color-number-key-shadow: #871c9c;
+  --color-toggle-switch-bg: #1d0934;
+  --color-toggle-btn-bg: #00e0d1;
   /* Text */
   --header-text-color: #ffe53d;
   --screen-text-color: #ffe53d;
   --number-key-text-color: #ffe53d;
   --delete-reset-key-text-color: white;
+  --footer-text-color: #ffe53d;
+  --footer-link-color: #ffe53d;
   --primary-text-color: #ffe53d;
   --secondary-text-color: white;
   --third-text-color: #1b2428;
@@ -224,6 +223,8 @@ body {
   color: var(--header-text-color);
   text-transform: uppercase;
   font-weight: 400;
+  align-self: flex-end;
+  padding-bottom: 0.3rem;
 }
 .calculator__header .toggle-switch {
   width: 7.2rem;
@@ -237,6 +238,7 @@ body {
 .calculator__header .toggle-switch label {
   width: 100%;
   height: 100%;
+  padding: 0.2rem;
   font-weight: 700;
   color: var(--header-text-color);
   text-align: center;
@@ -248,6 +250,34 @@ body {
   position: absolute;
   width: 0.1rem;
   height: 0.1rem;
+}
+.calculator__header .toggle {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  height: 2.5rem;
+  border-radius: 3rem;
+  background-color: var(--color-toggle-switch-bg);
+}
+.calculator__header .toggle::after {
+  content: "";
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-color: var(--color-toggle-btn-bg);
+  border-radius: 50%;
+  top: 0.5rem;
+  transform: translateX(-5px);
+}
+.calculator__header .toggle-switch input:nth-of-type(1):checked ~ .toggle::after {
+  left: 0.8rem;
+}
+.calculator__header .toggle-switch input:nth-of-type(2):checked ~ .toggle::after {
+  left: calc(50% - .4rem);
+}
+.calculator__header .toggle-switch input:nth-of-type(3):checked ~ .toggle::after {
+  left: calc(100% - 1.5rem);
 }
 
 /* Display */
@@ -328,4 +358,20 @@ input.calculator-screen {
   color: var(--third-text-color);
   grid-column-start: 3;
   grid-column-end: 5;
+}
+
+footer {
+  height: 5rem;
+  margin-top: 2rem;
+  color: var(--footer-text-color);
+}
+
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--footer-link-color);
 }/*# sourceMappingURL=main.css.map */
