@@ -17,3 +17,7 @@ Resources
 [CSS Grid Calculator](https://freshman.tech/css-grid-calculator/)
 
 08/02/2021: Today I am focusing on styling the calculator header and keypad. Still learning how to work with z-index, position, and opacity. The toggle-switch label was made with a z-index of 5. The input was had an absolute position and and opacity of 0. 
+
+08/03/2021: Forgot to add that I used CSS grid to help position the keys and the reset/equal button. 
+Resources: 
+[CSS Grid Calculator](https://freshman.tech/css-grid-calculator/)
