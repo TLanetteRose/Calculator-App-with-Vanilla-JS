@@ -313,8 +313,8 @@ input.calculator-screen {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-row-gap: 1rem;
-  grid-column-gap: 0.85rem;
-  padding: 2rem;
+  grid-column-gap: 1.5rem;
+  padding: 2.5rem;
   border-radius: 1rem;
 }
 @media (max-width: 576px) {
@@ -327,17 +327,19 @@ input.calculator-screen {
   .calculator-keypad {
     width: 54rem;
     height: 47.6rem;
+    grid-column-gap: 3rem;
   }
 }
 .calculator-keypad .number-key {
   background-color: var(--color-number-key-bg);
   color: var(--number-key-text-color);
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   cursor: pointer;
   font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
+  box-shadow: 0px 4px 0px 0px var(--color-number-key-shadow);
 }
 .calculator-keypad .function-key {
   font-size: 1.5rem;
@@ -352,12 +354,16 @@ input.calculator-screen {
   color: var(--delete-reset-key-text-color);
   grid-column-start: 1;
   grid-column-end: 3;
+  margin-top: 0.5rem;
+  box-shadow: 0px 4px 0px 0px var(--color-reset-shadow);
 }
 .calculator-keypad .equal-sign {
   background-color: var(--color-equal-sign-bg);
   color: var(--third-text-color);
   grid-column-start: 3;
   grid-column-end: 5;
+  margin-top: 0.5rem;
+  box-shadow: 0px 4px 0px 0px var(--color-equal-sign-shadow);
 }
 
 footer {
