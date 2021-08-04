@@ -202,7 +202,7 @@ body {
     width: 32.7rem;
   }
 }
-@media (min-width: 577px) {
+@media (min-width: 578px) {
   .calculator__header {
     width: 54rem;
   }
@@ -300,7 +300,7 @@ input.calculator-screen {
     align-self: center;
   }
 }
-@media (min-width: 577px) {
+@media (min-width: 578px) {
   input.calculator-screen {
     width: 54rem;
     height: 12.5rem;
@@ -323,7 +323,7 @@ input.calculator-screen {
     height: 42rem;
   }
 }
-@media (min-width: 577px) {
+@media (min-width: 578px) {
   .calculator-keypad {
     width: 54rem;
     height: 47.6rem;
