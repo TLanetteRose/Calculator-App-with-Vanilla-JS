@@ -139,10 +139,11 @@ body  {
 .calculator__container {
     background-color: var(--color-page-bg);
     max-width: 57rem;
-    width: 87%; 
     height: 100%;
     margin: 0 auto;
     @include flex (column, space-between);
+
+
 }
 
 /* Header */
@@ -151,8 +152,13 @@ body  {
     @include flex (row, space-between);
     height: 4.5rem;
     width: 100%;
+    padding: 0 2.4rem;
+    
+   /* @media screen and (max-width: $bp-mobile) {
+        width: 30rem;
+    }*/
 
-    @media (max-width: $bp-tablet-end) {
+    @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
         width: 32.7rem;
     }
 
@@ -168,8 +174,9 @@ body  {
     #toggle__container {
         @include flex (row, space-between);
         //align-items: baseline !important;
-        width: 15rem;
+        width: 50%;
         height: 4.5rem;
+        right: 0;
     }
 
     .toggle-title {
@@ -236,11 +243,7 @@ body  {
 
     .toggle-switch input:nth-of-type(3):checked ~ .toggle::after {
         left: calc(100% - 1.5rem);
-    }
-    
-    
-
-    
+    }  
     
 }
 
@@ -354,6 +357,7 @@ footer {
 .attribution {
     font-size: 11px;
     text-align: center;
+    padding: 0 2.4rem;
 }
 
 .attribution a {
