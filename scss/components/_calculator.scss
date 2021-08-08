@@ -287,7 +287,7 @@ input.calculator-screen {
 
 /* Keypad */
 .calculator-keypad {
-    background-color: var(--color-screen-bg);
+    background-color: var(--color-keypad-bg);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 2.5rem;
