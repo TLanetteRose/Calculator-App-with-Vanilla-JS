@@ -23,3 +23,10 @@ Resources:
 [CSS Grid Calculator](https://freshman.tech/css-grid-calculator/)
 
 08/08/2021: Today I'm going through and adjusing the sizing on the calculator. I've been reading articles about using relative units to add responsive styling to the webpage. I added the active and hover states to the keypad buttons. My next task is to add a function to place comma in input number according to place value. 
+
+###08/09/2021:
+I tried to research how to add a function to place commas in my input number. I wasn't understanding how to refactor my code to add the function, so I started a new script file. I followed a tutorial by Web Dev Simplified. 
+
+Resources: 
+[Build a Calculator with JavaScript Tutorial](https://www.youtube.com/watch?v=j59qQ7YWLxw)
+[Vanilla JavaScript Calculator](https://github.com/WebDevSimplified/Vanilla-JavaScript-Calculator/blob/master/index.html)
