@@ -11,12 +11,17 @@
 
    /* Keys */
    --color-delete-key-bg: #{$delete-key-bg1};
+   --color-delete-key-hover: #{$delete-key-hover1};
    --color-delete-shadow: #{$delete-key-shadow1};
+   
    --color-reset-key-bg: #{$reset-key-bg1};
+   --cover-reset-key-hover: #{$reset-key-hover1};
    --color-reset-shadow: #{$reset-key-shadow1}
    --color-equal-sign-bg: #{$equal-sign-bg1};
+   --color-equal-sign-hover: #{$equal-sign-hover1};
    --color-equal-sign-shadow: #{$equal-sign-shadow1};
    --color-number-key-bg: #{$number-key-bg1};
+   --color-number-key-hover: #{$number-key-hover1};
    --color-number-key-shadow: #{$number-key-shadow1};
    --color-toggle-switch-bg: #{$toggle-switch-bg1};
    --color-toggle-btn-bg: #{$toggle-btn-bg1};
@@ -35,11 +40,15 @@ body.theme1 {
 
     /* Keys */
     --color-delete-key-bg: #{$delete-key-bg1};
+    --color-delete-key-hover: #{$delete-key-hover1};
     --color-delete-shadow: #{$delete-key-shadow1};
     --color-reset-key-bg: #{$reset-key-bg1};
+    --cover-reset-key-hover: #{$reset-key-hover1};
     --color-reset-shadow: #{$reset-key-shadow1}; --color-equal-sign-bg: #{$equal-sign-bg1};
+    --color-equal-sign-hover: #{$equal-sign-hover1};
     --color-equal-sign-shadow: #{$equal-sign-shadow1};
     --color-number-key-bg: #{$number-key-bg1};
+    --color-number-key-hover: #{$number-key-hover1};
     --color-number-key-shadow: #{$number-key-shadow1};
     --color-toggle-switch-bg: #{$toggle-switch-bg1};
     --color-toggle-btn-bg: #{$toggle-btn-bg1};
@@ -66,11 +75,15 @@ body.theme2 {
 
     /* Keys */
     --color-delete-key-bg: #{$delete-key-bg2};
+    --color-delete-key-hover: #{$delete-key-hover2};
     --color-delete-shadow: #{$delete-key-shadow2};
     --color-reset-key-bg: #{$reset-key-bg2};
+    --cover-reset-key-hover: #{$reset-key-hover2};
     --color-reset-shadow: #{$reset-key-shadow2}; --color-equal-sign-bg: #{$equal-sign-bg2};
+    --color-equal-sign-hover: #{$equal-sign-hover2};
     --color-equal-sign-shadow: #{$equal-sign-shadow2};
     --color-number-key-bg: #{$number-key-bg2};
+    --color-number-key-hover: #{$number-key-hover2};
     --color-number-key-shadow: #{$number-key-shadow2};
     --color-toggle-switch-bg: #{$toggle-switch-bg2};
     --color-toggle-btn-bg: #{$toggle-btn-bg2};
@@ -98,11 +111,15 @@ body.theme3 {
 
     /* Keys */
     --color-delete-key-bg: #{$delete-key-bg3};
+    --color-delete-key-hover: #{$delete-key-hover3};
     --color-delete-shadow: #{$delete-key-shadow3};
     --color-reset-key-bg: #{$reset-key-bg3};
+    --cover-reset-key-hover: #{$reset-key-hover3};
     --color-reset-shadow: #{$reset-key-shadow3}; --color-equal-sign-bg: #{$equal-sign-bg3};
+    --color-equal-sign-hover: #{$equal-sign-hover3};
     --color-equal-sign-shadow: #{$equal-sign-shadow3};
     --color-number-key-bg: #{$number-key-bg3};
+    --color-number-key-hover: #{$number-key-hover3};
     --color-number-key-shadow: #{$number-key-shadow3};
     --color-toggle-switch-bg: #{$toggle-switch-bg3};
     --color-toggle-btn-bg: #{$toggle-btn-bg3};
@@ -329,6 +346,15 @@ input.calculator-screen {
         
     }
 
+    .number-key:hover {
+        background-color: var(--color-number-key-hover);
+    }
+
+    .number-key:active {
+        box-shadow: 0px 0px 0px var(--color-number-key-hover);
+        transform: translateY(4px);
+    }
+
     .function-key {
         font-size: 1.6rem;
         font-weight: $weight-regular;
@@ -337,6 +363,16 @@ input.calculator-screen {
     .delete {
         background-color: var(--color-delete-key-bg);
         color: var(--delete-reset-key-text-color);
+        box-shadow: 0px 4px 0px 0px var(--color-delete-shadow);
+    }
+
+    .delete:hover {
+        background-color: var(--color-delete-key-hover);
+    }
+
+    .delete:active {
+        box-shadow: 0px 0px 0px var(--color-delete-shadow);
+        transform: translateY(4px);
     }
 
     .reset {
@@ -349,6 +385,15 @@ input.calculator-screen {
         box-shadow: 0px 4px 0px 0px var(--color-reset-shadow);
     }
 
+    .reset:hover {
+        background-color: var(--cover-reset-key-hover);
+    }
+
+    .reset:active {
+        box-shadow: 0px 0px 0px var(--color-reset-shadow);
+        transform: translateY(4px);
+    }
+
     .equal-sign {
         background-color: var(--color-equal-sign-bg);
         color: var(--third-text-color);
@@ -357,9 +402,16 @@ input.calculator-screen {
         height: 6.1rem;
         margin-top: 0.5rem;
         box-shadow: 0px 4px 0px 0px var(--color-equal-sign-shadow);
+    }   
+
+    .equal-sign:hover {
+        background-color: var(--color-equal-sign-hover);
     }
 
-    
+    .equal-sign:active {
+        box-shadow: 0px 0px 0px var(--color-equal-sign-shadow);
+        transform: translateY(4px);
+    }
     
 }
 

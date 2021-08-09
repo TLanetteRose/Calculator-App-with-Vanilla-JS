@@ -8,11 +8,15 @@ $screen-bg1: hsl(224, 36%, 15%);
 /* Keys*/
 $delete-key-bg1: hsl(225, 21%, 49%); //Del and Reset
 $delete-key-shadow1: hsl(224, 28%, 35%);
+$delete-key-hover1: hsl(225, 40%, 50%);
 $reset-key-bg1: hsl(225, 21%, 49%); //Del and Reset
+$reset-key-hover1: hsl(225, 40%, 50%);
 $reset-key-shadow1: hsl(224, 28%, 35%); //Del and Reset
 $equal-sign-bg1: hsl(6, 63%, 50%); //Evaluate =
+$equal-sign-hover1: hsl(6, 80%, 50%);
 $equal-sign-shadow1: hsl(6, 70%, 34%); //Evaluate =
 $number-key-bg1: hsl(30, 25%, 89%); // Other keys
+$number-key-hover1: hsl(30, 5%, 70%);
 $number-key-shadow1: hsl(28, 16%, 65%); // Other keys
 $toggle-switch-bg1: hsl(223, 31%, 20%);
 $toggle-btn-bg1: hsl(6, 63%, 50%);
@@ -30,12 +34,16 @@ $screen-bg2: hsl(0, 0%, 93%); //screen
 
 /* Keys*/
 $delete-key-bg2: hsl(185, 42%, 37%); //Del and Reset
+$delete-key-hover2: hsl(185, 30%, 50%);
 $delete-key-shadow2: hsl(185, 58%, 25%); //Del and Reset
 $reset-key-bg2: hsl(185, 42%, 37%);
+$reset-key-hover2: hsl(185, 30%, 50%);
 $reset-key-shadow2: hsl(185, 58%, 25%);
 $equal-sign-bg2: hsl(25, 98%, 40%); //Evaluate =
+$equal-sign-hover2: hsl(25, 75%, 50%);
 $equal-sign-shadow2: hsl(25, 99%, 27%); //Evaluate =
 $number-key-bg2: hsl(45, 7%, 89%); // Other keys
+$number-key-hover2: hsl(45, 3%, 73%);
 $number-key-shadow2: hsl(35, 11%, 61%); // Other keys
 $toggle-switch-bg2: hsl(0, 5%, 81%);
 $toggle-btn-bg2: hsl(25, 98%, 40%);
@@ -53,12 +61,16 @@ $screen-bg3: hsl(268, 71%, 12%);
 
 /* Keys*/
 $delete-key-bg3: hsl(281, 89%, 26%); //Del and Reset
+$delete-key-hover3: hsl(281, 73%, 40%);
 $delete-key-shadow3: hsl(285, 91%, 52%); //Del and Reset
 $reset-key-bg3: hsl(281, 89%, 26%);
+$reset-key-hover3: hsl(281, 73%, 40%);
 $reset-key-shadow3: hsl(285, 91%, 52%);
 $equal-sign-bg3: hsl(176, 100%, 44%); //Evaluate =
+$equal-sign-hover3: hsl(176, 75%, 31%);
 $equal-sign-shadow3: hsl(177, 92%, 70%); //Evaluate =
 $number-key-bg3: hsl(268, 47%, 21%); // Other keys
+$number-key-hover3: hsl(268, 35%, 33%);
 $number-key-shadow3: hsl(290, 70%, 36%); // Other keys
 $toggle-switch-bg3: hsl(268, 71%, 12%);
 $toggle-btn-bg3: hsl(176, 100%, 44%);
