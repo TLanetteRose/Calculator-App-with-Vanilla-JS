@@ -22,4 +22,4 @@ Resources
 Resources: 
 [CSS Grid Calculator](https://freshman.tech/css-grid-calculator/)
 
-08/08/2021: Today I'm going through and adjusing the sizing on the calculator. I've been reading articles about using relative units to add responsive styling to the webpage. 
+08/08/2021: Today I'm going through and adjusing the sizing on the calculator. I've been reading articles about using relative units to add responsive styling to the webpage. I added the active and hover states to the keypad buttons. My next task is to add a function to place comma in input number according to place value. 

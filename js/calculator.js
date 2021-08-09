@@ -19,6 +19,7 @@ function inputDigit(digit) {
     console.log(calculator);
 }
 
+
 // Decimal function
 function inputDecimal(dot) {
     if (calculator.waitingForSecondOperand === true) {
@@ -81,6 +82,7 @@ function updateDisplay() {
     display.value = calculator.displayValue;
 }
 updateDisplay();
+
 
 //Keypad
 const keys = document.getElementById('calc-keys');
