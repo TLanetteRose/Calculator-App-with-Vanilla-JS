@@ -315,6 +315,7 @@ input.calculator-screen {
   width: 87%;
   height: 8.5rem;
   margin: 2.4rem;
+  padding: 1.6rem 3.4rem 1.2rem;
   border-radius: 1rem;
   overflow: hidden;
   font-size: 3.2rem;
