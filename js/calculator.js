@@ -10,12 +10,13 @@ const calculator = {
 function inputDigit(digit) {
     const {displayValue, waitingForSecondOperand} =
     calculator;
+    
     if (waitingForSecondOperand === true) {
         calculator.displayValue = digit;
         calculator.waitingForSecondOperand = false;
     } else {
         calculator.displayValue = displayValue === '0' ? digit : displayValue + digit;
-    }
+    } 
     console.log(calculator);
 }
 
@@ -31,6 +32,8 @@ function inputDecimal(dot) {
         calculator.displayValue += dot;
     }
 }
+
+
 
 // Handle Operator
 function handleOperator(nextOperator){

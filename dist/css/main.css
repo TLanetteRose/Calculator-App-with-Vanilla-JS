@@ -31,6 +31,10 @@ span {
 
 /* Breakpoints */
 /* Components */
+* {
+  outline: 1px solid white;
+}
+
 *,
 *::before,
 *::after {
@@ -308,9 +312,16 @@ body {
 }
 
 /* Display */
-input.calculator-screen {
+/*
+.calculator-screen */
+.output {
+  display: grid;
+  row-gap: 0.5rem;
+  grid-area: output;
+  grid-template-areas: "previous-operand" "current-operand";
+  grid-template-rows: repeat(2, 1fr);
+  overflow-x: hidden;
   background-color: var(--color-screen-bg);
-  color: var(--screen-text-color);
   border: none;
   width: 87%;
   height: 8.5rem;
@@ -318,12 +329,12 @@ input.calculator-screen {
   padding: 1.6rem 3.4rem 1.2rem;
   border-radius: 1rem;
   overflow: hidden;
-  font-size: 3.2rem;
-  font-weight: 700;
   text-align: right;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 @media (min-width: 577px) and (max-width: 767px) {
-  input.calculator-screen {
+  .output {
     width: 32.7rem;
     align-self: center;
     padding-left: 2.4rem;
@@ -331,10 +342,20 @@ input.calculator-screen {
   }
 }
 @media (min-width: 768px) {
-  input.calculator-screen {
+  .output {
     width: 54rem;
     height: 12.5rem;
   }
+}
+
+.output .previous-operand {
+  color: var(--screen-text-color);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: var(--screen-text-color);
+  font-size: 2.5rem;
 }
 
 /* Keypad */
