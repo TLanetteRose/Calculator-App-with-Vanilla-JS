@@ -275,9 +275,18 @@ body  {
 }
 
 /* Display */ 
-.calculator-screen {
+/*
+.calculator-screen */
+ .output {
+    display: grid;
+    row-gap: 0.5rem;
+    grid-area: output;
+    grid-template-areas: "previous-operand"
+    "current-operand";
+    grid-template-rows: repeat(2, 1fr);
+    overflow-x: hidden;
     background-color: var(--color-screen-bg);
-    color: var(--screen-text-color);
+    //color: var(--screen-text-color);
     border: none;
     width: 87%;
     height: 8.5rem;
@@ -285,9 +294,11 @@ body  {
     padding: 1.6rem 3.4rem 1.2rem;
     border-radius: 1rem;
     overflow: hidden;
-    font-size: 3.2rem;
-    font-weight: $weight-bold;
+    //font-size: 3.2rem;
+    //font-weight: $weight-bold;
     text-align: right;
+    word-wrap: break-word;
+    word-break: break-all;
 
     @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
         width: 32.7rem;
@@ -300,7 +311,19 @@ body  {
         width: 54rem;
         height: 12.5rem;
     }
+
 }
+
+.output .previous-operand {
+    color: var(--screen-text-color);
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color: var(--screen-text-color);
+    font-size: 2.5rem;
+}
+
 
 /* Keypad */
 .calculator-keypad {
