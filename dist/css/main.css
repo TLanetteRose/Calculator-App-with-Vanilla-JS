@@ -308,7 +308,7 @@ body {
 }
 
 /* Display */
-input.calculator-screen {
+.calculator-screen {
   background-color: var(--color-screen-bg);
   color: var(--screen-text-color);
   border: none;
@@ -323,7 +323,7 @@ input.calculator-screen {
   text-align: right;
 }
 @media (min-width: 577px) and (max-width: 767px) {
-  input.calculator-screen {
+  .calculator-screen {
     width: 32.7rem;
     align-self: center;
     padding-left: 2.4rem;
@@ -331,7 +331,7 @@ input.calculator-screen {
   }
 }
 @media (min-width: 768px) {
-  input.calculator-screen {
+  .calculator-screen {
     width: 54rem;
     height: 12.5rem;
   }
