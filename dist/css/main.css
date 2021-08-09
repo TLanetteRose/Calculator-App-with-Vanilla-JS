@@ -31,10 +31,6 @@ span {
 
 /* Breakpoints */
 /* Components */
-* {
-  outline: 1px solid white;
-}
-
 *,
 *::before,
 *::after {
@@ -62,12 +58,16 @@ body {
   --color-screen-bg: #182034;
   /* Keys */
   --color-delete-key-bg: #637097;
+  --color-delete-key-hover: #4d66b3;
   --color-delete-shadow: #404e72;
   --color-reset-key-bg: #637097;
+  --cover-reset-key-hover: #4d66b3;
   --color-reset-shadow: #404e72
   --color-equal-sign-bg: #d03f2f;
+  --color-equal-sign-hover: #e62e1a;
   --color-equal-sign-shadow: #93261a;
   --color-number-key-bg: #eae3dc;
+  --color-number-key-hover: #b6b3af;
   --color-number-key-shadow: #b4a597;
   --color-toggle-switch-bg: #232c43;
   --color-toggle-btn-bg: #d03f2f;
@@ -84,12 +84,16 @@ body.theme1 {
   --color-screen-bg: #182034;
   /* Keys */
   --color-delete-key-bg: #637097;
+  --color-delete-key-hover: #4d66b3;
   --color-delete-shadow: #404e72;
   --color-reset-key-bg: #637097;
+  --cover-reset-key-hover: #4d66b3;
   --color-reset-shadow: #404e72;
   --color-equal-sign-bg: #d03f2f;
+  --color-equal-sign-hover: #e62e1a;
   --color-equal-sign-shadow: #93261a;
   --color-number-key-bg: #eae3dc;
+  --color-number-key-hover: #b6b3af;
   --color-number-key-shadow: #b4a597;
   --color-toggle-switch-bg: #232c43;
   --color-toggle-btn-bg: #d03f2f;
@@ -113,12 +117,16 @@ body.theme2 {
   --color-screen-bg: #ededed;
   /* Keys */
   --color-delete-key-bg: #377f86;
+  --color-delete-key-hover: #599fa6;
   --color-delete-shadow: #1b5f65;
   --color-reset-key-bg: #377f86;
+  --cover-reset-key-hover: #599fa6;
   --color-reset-shadow: #1b5f65;
   --color-equal-sign-bg: #ca5502;
+  --color-equal-sign-hover: #df7020;
   --color-equal-sign-shadow: #893901;
   --color-number-key-bg: #e5e4e1;
+  --color-number-key-hover: #bcbbb8;
   --color-number-key-shadow: #a69d91;
   --color-toggle-switch-bg: #d1cccc;
   --color-toggle-btn-bg: #ca5502;
@@ -142,12 +150,16 @@ body.theme3 {
   --color-screen-bg: #1d0934;
   /* Keys */
   --color-delete-key-bg: #58077d;
+  --color-delete-key-hover: #811cb0;
   --color-delete-shadow: #bc15f4;
   --color-reset-key-bg: #58077d;
+  --cover-reset-key-hover: #811cb0;
   --color-reset-shadow: #bc15f4;
   --color-equal-sign-bg: #00e0d1;
+  --color-equal-sign-hover: #148a82;
   --color-equal-sign-shadow: #6cf9f2;
   --color-number-key-bg: #341c4f;
+  --color-number-key-hover: #523772;
   --color-number-key-shadow: #871c9c;
   --color-toggle-switch-bg: #1d0934;
   --color-toggle-btn-bg: #00e0d1;
@@ -303,6 +315,7 @@ input.calculator-screen {
   width: 87%;
   height: 8.5rem;
   margin: 2.4rem;
+  padding: 1.6rem 3.4rem 1.2rem;
   border-radius: 1rem;
   overflow: hidden;
   font-size: 3.2rem;
@@ -326,7 +339,7 @@ input.calculator-screen {
 
 /* Keypad */
 .calculator-keypad {
-  background-color: var(--color-screen-bg);
+  background-color: var(--color-keypad-bg);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 2.5rem;
@@ -371,6 +384,13 @@ input.calculator-screen {
       -ms-user-select: none;
           user-select: none;
 }
+.calculator-keypad .number-key:hover {
+  background-color: var(--color-number-key-hover);
+}
+.calculator-keypad .number-key:active {
+  box-shadow: 0px 0px 0px var(--color-number-key-hover);
+  transform: translateY(4px);
+}
 .calculator-keypad .function-key {
   font-size: 1.6rem;
   font-weight: 400;
@@ -378,6 +398,14 @@ input.calculator-screen {
 .calculator-keypad .delete {
   background-color: var(--color-delete-key-bg);
   color: var(--delete-reset-key-text-color);
+  box-shadow: 0px 4px 0px 0px var(--color-delete-shadow);
+}
+.calculator-keypad .delete:hover {
+  background-color: var(--color-delete-key-hover);
+}
+.calculator-keypad .delete:active {
+  box-shadow: 0px 0px 0px var(--color-delete-shadow);
+  transform: translateY(4px);
 }
 .calculator-keypad .reset {
   background-color: var(--color-reset-key-bg);
@@ -388,6 +416,13 @@ input.calculator-screen {
   margin-top: 0.5rem;
   box-shadow: 0px 4px 0px 0px var(--color-reset-shadow);
 }
+.calculator-keypad .reset:hover {
+  background-color: var(--cover-reset-key-hover);
+}
+.calculator-keypad .reset:active {
+  box-shadow: 0px 0px 0px var(--color-reset-shadow);
+  transform: translateY(4px);
+}
 .calculator-keypad .equal-sign {
   background-color: var(--color-equal-sign-bg);
   color: var(--third-text-color);
@@ -396,6 +431,13 @@ input.calculator-screen {
   height: 6.1rem;
   margin-top: 0.5rem;
   box-shadow: 0px 4px 0px 0px var(--color-equal-sign-shadow);
+}
+.calculator-keypad .equal-sign:hover {
+  background-color: var(--color-equal-sign-hover);
+}
+.calculator-keypad .equal-sign:active {
+  box-shadow: 0px 0px 0px var(--color-equal-sign-shadow);
+  transform: translateY(4px);
 }
 
 footer {

@@ -21,3 +21,5 @@ Resources
 08/03/2021: Forgot to add that I used CSS grid to help position the keys and the reset/equal button. 
 Resources: 
 [CSS Grid Calculator](https://freshman.tech/css-grid-calculator/)
+
+08/08/2021: Today I'm going through and adjusing the sizing on the calculator. I've been reading articles about using relative units to add responsive styling to the webpage. I added the active and hover states to the keypad buttons. My next task is to add a function to place comma in input number according to place value. 
