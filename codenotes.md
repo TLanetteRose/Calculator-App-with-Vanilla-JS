@@ -30,3 +30,9 @@ I tried to research how to add a function to place commas in my input number. I 
 Resources: 
 [Build a Calculator with JavaScript Tutorial](https://www.youtube.com/watch?v=j59qQ7YWLxw)
 [Vanilla JavaScript Calculator](https://github.com/WebDevSimplified/Vanilla-JavaScript-Calculator/blob/master/index.html)
+
+### 08/10/2021: 
+My numbers were not showing up on the display. I found a solution on Stack Overflow. Initially the display div was being set to the array for the buttons, not the innerHTML for the button. 
+
+Resources:
+[Stack Overflow](https://stackoverflow.com/questions/53089348/javascript-dom-calculator-display-digits-on-a-screen)
