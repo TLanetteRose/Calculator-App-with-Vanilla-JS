@@ -278,22 +278,26 @@ body  {
 /*
 .calculator-screen */
  .output {
-    display: grid;
+    /*display: grid;
     row-gap: 0.5rem;
     grid-area: output;
     grid-template-areas: "previous-operand"
     "current-operand";
     grid-template-rows: repeat(2, 1fr);
-    overflow-x: hidden;
+    overflow-x: hidden;*/
+    grid-column: 1/-1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
     background-color: var(--color-screen-bg);
-    //color: var(--screen-text-color);
+    color: var(--screen-text-color);
     border: none;
     width: 87%;
     height: 8.5rem;
     margin: 2.4rem;
     padding: 1.6rem 3.4rem 1.2rem;
     border-radius: 1rem;
-    overflow: hidden;
     //font-size: 3.2rem;
     //font-weight: $weight-bold;
     text-align: right;
@@ -314,12 +318,12 @@ body  {
 
 }
 
-.output .previous-operand {
+.previous-operand {
     color: var(--screen-text-color);
     font-size: 1.5rem;
 }
 
-.output .current-operand {
+.current-operand {
     color: var(--screen-text-color);
     font-size: 2.5rem;
 }
@@ -333,6 +337,7 @@ body  {
     padding: 2.5rem;
     border-radius: 1rem;
     width: 87%;
+    
     @media (max-width: $bp-mobile) {
         height: 42rem;
         grid-row-gap: 1rem;

@@ -38,11 +38,15 @@
             </div><!-- .toggle-switch -->
           </div> <!-- .toggle-container -->
       </header>
-      <div class="output calculator-screen">
+      <div class="output">
         <div data-previous-operand class="previous-operand"></div>
-        <div data-current-operand class="current-operand"></div>
+        <div data-current-operand id="nums" class="current-operand"></div>
       </div>
-     <!-- <input type="text" id="screen" class="calculator-screen" value="" disabled />-->
+     <!-- 
+       <div class="calculator-screen">
+        <input type="text" id="screen" class="calculator-screen" value="" disabled />
+       </div> 
+      -->
 
       <section id="calc-keys" class="calculator-keypad">
         <button data-number type="button" value="7" class="number-key">7</button>
