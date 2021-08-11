@@ -1,5 +1,8 @@
 // Object to keep track of values
-const calculator = {
+// First JavaScript file for calculator
+// Refer to updated file
+
+/*const calculator = {
     displayValue: '0',
     firstOperand: null,
     waitingForSecondOperand: false,
@@ -118,3 +121,4 @@ keys.addEventListener('click', event => {
 
     updateDisplay();
 })
+*/
