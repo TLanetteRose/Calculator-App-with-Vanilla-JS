@@ -31,10 +31,6 @@ span {
 
 /* Breakpoints */
 /* Components */
-* {
-  outline: 1px solid white;
-}
-
 *,
 *::before,
 *::after {
