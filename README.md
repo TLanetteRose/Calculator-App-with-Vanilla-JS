@@ -166,10 +166,6 @@ compute() {
     }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
 I would love to use JavaScript to change between color themes. I have seen some code examples. However, I wanted to have a better understanding of using multiple color themes with CSS/Sass. I did try to add some personal touches to my app. I added a border to the screen, keypad, and toggle. I felt that the calculator blended too much into the surrounding page of the without a border/boundary. Finally, I want to continue to work with using JavaScript, so that I can become more confident in that language. 
