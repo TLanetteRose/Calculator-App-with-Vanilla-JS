@@ -38,4 +38,4 @@ Resources:
 [Stack Overflow](https://stackoverflow.com/questions/53089348/javascript-dom-calculator-display-digits-on-a-screen)
 
 ### 08/11/2021
-Day 2 of working on my new JS file for the calculator. 
+Day 2 of working on my new JS file for the calculator. I made functions for each operation and  function key. I ended up using innertext and it worked well. I'm learning more about how to organize my code especially my functions. I decided to add a border outline to the screen, keypad, and toggle. I think it helps the elements stand out more on the page. 

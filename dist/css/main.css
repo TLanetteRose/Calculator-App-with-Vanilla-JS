@@ -31,10 +31,6 @@ span {
 
 /* Breakpoints */
 /* Components */
-* {
-  outline: 1px solid white;
-}
-
 *,
 *::before,
 *::after {
@@ -60,6 +56,9 @@ body {
   --color-keypad-bg: #232c43;
   --color-toggle-bg: #232c43;
   --color-screen-bg: #182034;
+  --color-screen-outline: #767d8f;
+  --color-keypad-outline: #767d8f;
+  --color-toggle-outline: #767d8f;
   /* Keys */
   --color-delete-key-bg: #637097;
   --color-delete-key-hover: #4d66b3;
@@ -86,6 +85,9 @@ body.theme1 {
   --color-keypad-bg: #232c43;
   --color-toggle-bg: #232c43;
   --color-screen-bg: #182034;
+  --color-screen-outline: #767d8f;
+  --color-keypad-outline: #767d8f;
+  --color-toggle-outline: #767d8f;
   /* Keys */
   --color-delete-key-bg: #637097;
   --color-delete-key-hover: #4d66b3;
@@ -119,6 +121,9 @@ body.theme2 {
   --color-keypad-bg: #d1cccc;
   --color-toggle-bg: #d1cccc;
   --color-screen-bg: #ededed;
+  --color-screen-outline: #1b5f65;
+  --color-keypad-outline: #1b5f65;
+  --color-toggle-outline: #1b5f65;
   /* Keys */
   --color-delete-key-bg: #377f86;
   --color-delete-key-hover: #599fa6;
@@ -152,6 +157,9 @@ body.theme3 {
   --color-keypad-bg: #1d0934;
   --color-toggle-bg: #1d0934;
   --color-screen-bg: #1d0934;
+  --color-screen-outline: #58077d;
+  --color-keypad-outline: #58077d;
+  --color-toggle-outline: #58077d;
   /* Keys */
   --color-delete-key-bg: #58077d;
   --color-delete-key-hover: #811cb0;
@@ -230,6 +238,7 @@ body {
 .calculator__header .calculator-title {
   width: 50%;
   color: var(--header-text-color);
+  padding-top: 1.2rem;
 }
 @media (max-width: 576px) {
   .calculator__header .calculator-title {
@@ -254,7 +263,7 @@ body {
   text-transform: uppercase;
   font-weight: 400;
   align-self: flex-end;
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.4rem;
   padding-right: 2.5rem;
 }
 .calculator__header .toggle-switch {
@@ -290,6 +299,7 @@ body {
   height: 2.5rem;
   border-radius: 3rem;
   background-color: var(--color-toggle-switch-bg);
+  border: 1px solid var(--color-toggle-outline);
 }
 .calculator__header .toggle::after {
   content: "";
@@ -298,7 +308,7 @@ body {
   height: 1.6rem;
   background-color: var(--color-toggle-btn-bg);
   border-radius: 50%;
-  top: 0.5rem;
+  top: 0.25rem;
   transform: translateX(-5px);
 }
 .calculator__header .toggle-switch input:nth-of-type(1):checked ~ .toggle::after {
@@ -315,13 +325,6 @@ body {
 /*
 .calculator-screen */
 .output {
-  /*display: grid;
-  row-gap: 0.5rem;
-  grid-area: output;
-  grid-template-areas: "previous-operand"
-  "current-operand";
-  grid-template-rows: repeat(2, 1fr);
-  overflow-x: hidden;*/
   grid-column: 1/-1;
   display: flex;
   align-items: flex-end;
@@ -329,7 +332,7 @@ body {
   flex-direction: column;
   background-color: var(--color-screen-bg);
   color: var(--screen-text-color);
-  border: none;
+  border: 1px solid var(--color-screen-outline);
   width: 87%;
   height: 8.5rem;
   margin: 2.4rem;
@@ -372,6 +375,7 @@ body {
   padding: 2.5rem;
   border-radius: 1rem;
   width: 87%;
+  border: 1px solid var(--color-keypad-outline);
 }
 @media (max-width: 576px) {
   .calculator-keypad {
