@@ -107,9 +107,9 @@ class Calculator {
             integerDisplay = ''
         } else {
             integerDisplay = integerDigits.toLocaleString('en', {maximumFractionDigits: 0, 
-            
             })
         }
+
         if (decimalDigits != null) {
             return `${integerDisplay}.${decimalDigits}`
         } else {
@@ -118,7 +118,7 @@ class Calculator {
     }
 
     updateDisplay() {
-        this.currentOperandTextElement.innerText = (this.currentOperand)
+        this.currentOperandTextElement.innerText = this.getDisplayNumber(this.currentOperand)
         if (this.operation != null) {
             this.previousOperandTextElement.innerText = `${this.getDisplayNumber(
                 this.previousOperand
@@ -131,10 +131,8 @@ class Calculator {
 }
 
 
-
 // Variables
 const numberButtons = document.querySelectorAll('[data-number]');
-//const operationButtons = document.querySelectorAll('[data-operation]');
 const addButton = document.querySelector('[data-add');
 const subtractButton = document.querySelector('[data-subtract');
 const multiplyButton = document.querySelector('[data-multiply');
@@ -156,13 +154,6 @@ numberButtons.forEach(button => {
         calculator.updateDisplay()
     })
 })
-
-/*operationsButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        calculator.chooseOperation(button.innerText)
-        calculator.updateDisplay()
-    })
-})*/
 
 addButton.addEventListener('click', () => {
     calculator.addNumber(addButton.innerText)
