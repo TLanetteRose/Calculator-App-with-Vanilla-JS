@@ -50,7 +50,8 @@ body.theme1 {
     --color-delete-shadow: #{$delete-key-shadow1};
     --color-reset-key-bg: #{$reset-key-bg1};
     --cover-reset-key-hover: #{$reset-key-hover1};
-    --color-reset-shadow: #{$reset-key-shadow1}; --color-equal-sign-bg: #{$equal-sign-bg1};
+    --color-reset-shadow: #{$reset-key-shadow1}; 
+    --color-equal-sign-bg: #{$equal-sign-bg1};
     --color-equal-sign-hover: #{$equal-sign-hover1};
     --color-equal-sign-shadow: #{$equal-sign-shadow1};
     --color-number-key-bg: #{$number-key-bg1};
@@ -88,7 +89,8 @@ body.theme2 {
     --color-delete-shadow: #{$delete-key-shadow2};
     --color-reset-key-bg: #{$reset-key-bg2};
     --cover-reset-key-hover: #{$reset-key-hover2};
-    --color-reset-shadow: #{$reset-key-shadow2}; --color-equal-sign-bg: #{$equal-sign-bg2};
+    --color-reset-shadow: #{$reset-key-shadow2}; 
+    --color-equal-sign-bg: #{$equal-sign-bg2};
     --color-equal-sign-hover: #{$equal-sign-hover2};
     --color-equal-sign-shadow: #{$equal-sign-shadow2};
     --color-number-key-bg: #{$number-key-bg2};
@@ -127,7 +129,8 @@ body.theme3 {
     --color-delete-shadow: #{$delete-key-shadow3};
     --color-reset-key-bg: #{$reset-key-bg3};
     --cover-reset-key-hover: #{$reset-key-hover3};
-    --color-reset-shadow: #{$reset-key-shadow3}; --color-equal-sign-bg: #{$equal-sign-bg3};
+    --color-reset-shadow: #{$reset-key-shadow3}; 
+    --color-equal-sign-bg: #{$equal-sign-bg3};
     --color-equal-sign-hover: #{$equal-sign-hover3};
     --color-equal-sign-shadow: #{$equal-sign-shadow3};
     --color-number-key-bg: #{$number-key-bg3};
@@ -179,11 +182,7 @@ body  {
     height: 4.5rem;
     width: 100%;
     margin: 0 2.4rem;
-    //padding: 0 2.4rem;
-    
-    /*@media screen and (max-width: $bp-mobile) {
-        width: 30rem;
-    }*/
+   
 
     @media (min-width: $bp-tablet-start) and (max-width: $bp-tablet-end) {
         width: 32.7rem;
@@ -198,6 +197,7 @@ body  {
         width: 50%;
         color: var(--header-text-color);
         padding-top: 1.2rem;
+        font-size: 2rem;
 
         @media (max-width: $bp-mobile) {
             margin-left: 2.5rem;

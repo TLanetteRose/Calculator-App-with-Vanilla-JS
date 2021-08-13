@@ -47,7 +47,7 @@ I used an awesome open-source devtool app called [Responsively](https://opencoll
 
 ### Links
 
-- Solution URL: [Here's my solution link:](https://github.com/TLanetteRose/Calculator-App-with-Vanilla-JS)
+- Solution URL: [Here's my solution link:](https://www.frontendmentor.io/solutions/calculator-app-with-vanilla-javascript-DkQoqez8a)
 - Live Site URL: [Here's my finished site:](calculator-app-with-vanilla-js.vercel.app)
 
 ## My process
