@@ -187,7 +187,7 @@ I used a lot of references and resources in addition to [Google](https://www.goo
 
 ## Author
 
-- Website - [T.Lanette Pollard](https://www.your-site.com)
+- Website - [T.Lanette Pollard](https://tlp-portfolio.vercel.app/)
 - Frontend Mentor - [@TLanetteRose](https://www.frontendmentor.io/profile/TLanetteRose)
 - Twitter - [@TpLanetteNBCT](https://twitter.com/TpLanetteNBCT)
 
